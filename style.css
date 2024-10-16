@@ -1,14 +1,14 @@
 /* General styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #4b3621; /* Brown background */
+    background-color: #000000; /* Black background */
     color: #ffdab9; /* Peach text */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #000000; /* Black header */
+    background-color: #333333; /* Dark grey/black header */
     color: #ffdab9;
     padding: 20px;
     text-align: center;
@@ -37,17 +37,17 @@ ul li {
 }
 
 a {
-    color: #4b3621; /* Brown links */
+    color: #ffdab9; /* Peach links */
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
-    color: #8b4513; /* Lighter brown hover effect */
+    color: #f0b27a; /* Lighter peach hover effect */
 }
 
 footer {
-    background-color: #000000; /* Black footer */
+    background-color: #333333; /* Dark grey/black footer */
     color: #ffdab9;
     text-align: center;
     padding: 20px;
@@ -81,7 +81,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #8b4513; /* Lighter brown hover effect */
+    color: #f0b27a; /* Lighter peach hover effect */
 }
 
 /* About Section Styling */

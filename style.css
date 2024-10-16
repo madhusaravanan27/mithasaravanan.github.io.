@@ -83,3 +83,14 @@ footer a {
 footer a:hover {
     color: #f0b27a;
 }
+
+/* Profile Image Styling */
+.profile-image {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px auto; /* Centers the image */
+    border: 3px solid #ffdab9; /* Optional: Peach border */
+}

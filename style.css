@@ -1,25 +1,25 @@
 /* General styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e1e1e; /* Dark background */
-    color: #ffdab9; /* Text color */
+    background-color: #6A0DAD; /* Deep Purple background */
+    color: #FFDAB9; /* Peach text color */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
-    color: #ffdab9;
+    background-color: #1E90FF; /* Blue background for the header */
+    color: #FFDAB9; /* Peach text in the header */
     padding: 20px;
     text-align: center;
 }
 
 h1, h2 {
-    color: #ffdab9; /* Peach color for headers */
+    color: #FFDAB9; /* Peach color for headers */
 }
 
 p {
-    color: #ffdab9; /* Peach color for text */
+    color: #FFDAB9; /* Peach color for text */
 }
 
 section {
@@ -37,18 +37,18 @@ ul li {
 }
 
 a {
-    color: #ffdab9; /* Peach links */
+    color: #1E90FF; /* Blue links */
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
-    color: #f0b27a; /* Slightly lighter peach for hover effect */
+    color: #F0A4A4; /* Slightly lighter peach for hover effect */
 }
 
 footer {
-    background-color: #333;
-    color: #ffdab9;
+    background-color: #1E90FF; /* Blue footer background */
+    color: #FFDAB9; /* Peach footer text */
     text-align: center;
     padding: 20px;
     position: relative;
@@ -56,21 +56,49 @@ footer {
     width: 100%;
 }
 
-/* Specific styling for the circular profile image */
+/* Specific Styling */
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+section#projects ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #FFDAB9; /* Peach colored links in footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #F0A4A4;
+}
+
+/* About Section Styling */
 #about {
     display: flex;
-    align-items: center;
+    align-items: center; /* Vertically align the image and text */
 }
 
 .profile-image {
-    width: 150px;
+    width: 150px; /* Adjust the size as needed */
     height: 150px;
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures the image fits within the circular frame without distortion */
-    margin-right: 20px;
-    border: 3px solid #ffdab9; /* Optional: Peach border for the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fits without distortion */
+    margin-right: 20px; /* Add some space between the image and the text */
+    border: 3px solid #FFDAB9; /* Peach border */
 }
 
 #about p {
-    flex: 1; /* This allows the text to fill the remaining space next to the image */
+    flex: 1; /* This allows the text to fill the remaining space */
 }

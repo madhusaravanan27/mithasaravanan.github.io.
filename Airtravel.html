@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Travel Scheduler Using CouchBase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000; /* Black background */
+            color: #ffdab9; /* Peach text */
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333333;
+            padding: 20px;
+            color: #ffdab9;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #ffdab9;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #ffdab9;
+            margin-bottom: 15px;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #333333;
+            border-radius: 8px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 10px 0;
+            color: #ffdab9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #ffdab9;
+        }
+
+        a {
+            color: #ffdab9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #f0b27a; /* Lighter peach hover effect */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Air Travel Scheduler Using CouchBase</h1>
+    </header>
+
+    <section>
+        <h2>Project Overview</h2>
+        <p>
+            This project leverages Couchbase as the database for a Trip Planner application. The database stores key travel-related entities such as airlines, airports, routes, and hotels, facilitating a structured and efficient travel management solution. Couchbase's N1QL query language is used to perform basic CRUD operations on the travel data stored as JSON documents.
+        </p>
+    </section>
+
+    <section>
+        <h2>Technologies Used</h2>
+        <ul>
+            <li><strong>Couchbase:</strong> A NoSQL database used to manage and store travel-related documents (e.g., airlines, routes, hotels).</li>
+            <li><strong>Docker:</strong> Used to run the Couchbase server locally, accessible via localhost:8091.</li>
+            <li><strong>N1QL:</strong> Couchbase's query language, used for performing CRUD operations on the database.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Data Entities</h2>
+        <ul>
+            <li><strong>Airlines:</strong> Stores details about airline companies, including information like name, fleet size, headquarters, and destinations.</li>
+            <li><strong>Routes:</strong> Contains information about flight routes, including departure and arrival airports, distance, and flight time.</li>
+            <li><strong>Airports:</strong> Holds details about airports, such as na

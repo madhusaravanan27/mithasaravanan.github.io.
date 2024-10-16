@@ -64,6 +64,15 @@
         a:hover {
             color: #f0b27a; /* Lighter peach hover effect */
         }
+
+        .project-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
@@ -73,6 +82,7 @@
     </header>
 
     <section>
+        <img src="airtravel.jpg" alt="Air Travel Scheduler Project" class="project-image">
         <h2>Project Overview</h2>
         <p>
             This project leverages Couchbase as the database for a Trip Planner application. The database stores key travel-related entities such as airlines, airports, routes, and hotels, facilitating a structured and efficient travel management solution. Couchbase's N1QL query language is used to perform basic CRUD operations on the travel data stored as JSON documents.
@@ -93,4 +103,14 @@
         <ul>
             <li><strong>Airlines:</strong> Stores details about airline companies, including information like name, fleet size, headquarters, and destinations.</li>
             <li><strong>Routes:</strong> Contains information about flight routes, including departure and arrival airports, distance, and flight time.</li>
-            <li><strong>Airports:</strong> Holds details about airports, such as na
+            <li><strong>Airports:</strong> Holds details about airports, such as name and location (city and country).</li>
+            <li><strong>Hotels:</strong> Stores data about hotels, including the name and location of each property.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>View more projects on <a href="https://github.com/madhusaravanan27">GitHub</a></p>
+    </footer>
+
+</body>
+</html>

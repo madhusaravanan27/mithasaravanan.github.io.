@@ -4,19 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Madhumitha Saravanan</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Container for the circle */
+        .circle-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #4CAF50; /* Change the background color as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 20px; /* Positioning it on the left */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* Styling for the content inside the circle */
+        .circle-content {
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* General page styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        #about, #projects {
+            margin-left: 200px; /* Offset content for the circle */
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+    </style>
 </head>
 <body>
+    <!-- Circular element on the left side -->
+    <div class="circle-container">
+        <div class="circle-content">
+            Hello, World!
+        </div>
+    </div>
+
+    <!-- Header section -->
     <header>
         <h1>Madhumitha Saravanan</h1>
         <p>Data Engineer | Data Scientist</p>
     </header>
+
+    <!-- About section -->
     <section id="about">
         <h2>About Me</h2>
-        <img src="profile.jpg" alt="Madhumitha Saravanan" class="profile-image">
         <p>I'm Madhumitha Saravanan, a Data Engineer and Data Scientist with a passion for designing scalable data solutions and transforming complex data into meaningful insights. I specialize in building and optimizing data pipelines, leveraging cloud platforms like AWS and Azure, and utilizing big data tools such as Spark and Hadoop to drive efficiency and innovation.</p>
         <p>Currently pursuing an M.S. in Applied Data Science at Syracuse University (expected Dec 2024), I’ve developed a strong foundation in machine learning, big data analytics, and cloud management. My technical expertise allows me to create end-to-end solutions that streamline processes, enhance performance, and enable data-driven decision-making.</p>
     </section>
+
+    <!-- Projects section -->
     <section id="projects">
         <h2>Projects</h2>
         <ul>
@@ -31,6 +93,8 @@
             <li><a href="https://github.com/madhusaravanan27/Crime-Classification-based-on-Geographical-area">Crime Classification based on Geographical Area</a></li>
         </ul>
     </section>
+
+    <!-- Footer section -->
     <footer>
         <p>Connect with me on <a href="https://www.linkedin.com/in/mithasaravanan7/">LinkedIn</a></p>
     </footer>

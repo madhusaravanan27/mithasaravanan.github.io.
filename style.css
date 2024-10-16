@@ -84,13 +84,21 @@ footer a:hover {
     color: #f0b27a;
 }
 
-/* Profile Image Styling */
+/* About Section Styling */
+#about {
+    display: flex;
+    align-items: center; /* Vertically align the image and text */
+}
+
 .profile-image {
     width: 150px; /* Adjust the size as needed */
     height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto 20px auto; /* Centers the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fits without distortion */
+    margin-right: 20px; /* Add some space between the image and the text */
     border: 3px solid #ffdab9; /* Optional: Peach border */
+}
+
+#about p {
+    flex: 1; /* This allows the text to fill the remaining space */
 }

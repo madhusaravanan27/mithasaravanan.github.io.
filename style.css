@@ -1,8 +1,8 @@
 /* General styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e1e1e; /* Dark background (black) */
-    color: #ffdab9; /* Text color (peach) */
+    background-color: #1e1e1e; /* Dark background */
+    color: #ffdab9; /* Text color */
     margin: 0;
     padding: 0;
 }
@@ -56,49 +56,21 @@ footer {
     width: 100%;
 }
 
-/* Specific Styling */
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 18px;
-}
-
-h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-section#projects ul li {
-    margin-bottom: 10px;
-}
-
-footer a {
-    color: #ffdab9;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #f0b27a;
-}
-
-/* About Section Styling */
+/* Specific styling for the circular profile image */
 #about {
     display: flex;
-    align-items: center; /* Vertically align the image and text */
+    align-items: center;
 }
 
 .profile-image {
-    width: 150px; /* Adjust the size as needed */
+    width: 150px;
     height: 150px;
-    border-radius: 50%; /* Make the image circular */
-    object-fit: cover; /* Ensure the image fits without distortion */
-    margin-right: 20px; /* Add some space between the image and the text */
-    border: 3px solid #ffdab9; /* Optional: Peach border */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits within the circular frame without distortion */
+    margin-right: 20px;
+    border: 3px solid #ffdab9; /* Optional: Peach border for the image */
 }
 
 #about p {
-    flex: 1; /* This allows the text to fill the remaining space */
+    flex: 1; /* This allows the text to fill the remaining space next to the image */
 }

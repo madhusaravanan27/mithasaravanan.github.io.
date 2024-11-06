@@ -3,136 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Time Sports Analytic Platform</title>
+    <title>Portfolio - Madhumitha Saravanan</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
     <style>
-        /* Main body styling */
+        /* Basic Styling */
         body {
             font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #ffeb3b; /* Yellow background */
-            color: #000; /* Black text */
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
+            align-items: center;
         }
 
-        /* Container for centering content */
-        .container {
-            width: 80%;
-            max-width: 800px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 20px;
+        /* Header Styling */
+        header {
+            background-color: #ff5722; /* Dark orange */
+            color: #fff;
+            text-align: center;
             padding: 20px;
-            border-radius: 8px;
+            width: 100%;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0 0;
+        }
+
+        /* About Section */
+        #about {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
-        /* Header section */
-        h1 {
-            color: #000;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+        #about img.profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        h2, h3 {
-            color: #333;
-            font-size: 1.5em;
+        #about h2 {
+            color: #ff5722;
+            font-size: 1.8em;
+            margin-bottom: 15px;
         }
 
-        /* Section margins */
-        .section {
-            margin: 20px 0;
+        /* Projects Section */
+        #projects {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* Technologies and Key Accomplishments list styling */
-        ul {
+        #projects h2 {
+            color: #ff5722;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        #projects ul {
             list-style-type: none;
             padding: 0;
         }
 
-        li {
+        #projects li {
             margin: 10px 0;
-            font-size: 1em;
-            text-align: left;
         }
 
-        /* Styling for the image */
-        .project-image {
-            width: 100%;
-            max-width: 600px;
-            margin: 20px auto;
-            border-radius: 8px;
-        }
-
-        /* GitHub link styling */
-        .github-link {
-            text-align: center;
-            margin-top: 10px;
-            font-size: 1.2em;
-        }
-
-        .github-link a {
-            color: #000;
-            font-weight: bold;
+        #projects a {
+            color: #333;
             text-decoration: none;
-            padding: 8px 16px;
-            border: 2px solid #000;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            font-weight: bold;
+            transition: color 0.3s;
         }
 
-        .github-link a:hover {
-            background-color: #000;
-            color: #ffeb3b;
+        #projects a:hover {
+            color: #ff5722;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #ff8a50;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Real Time Sports Analytic Platform</h1>
+    <!-- Header Section -->
+    <header>
+        <h1>Madhumitha Saravanan</h1>
+        <p>Data Engineer | Data Scientist</p>
+    </header>
 
-        <!-- Project Image -->
-        <img src="RealSports.png" alt="Real Time Sports Analytics" class="project-image">
-
-        <div class="section">
-            <h2>Project Overview</h2>
+    <!-- About Me Section -->
+    <section id="about">
+        <img src="profile.jpg" alt="Madhumitha Saravanan" class="profile-image">
+        <div>
+            <h2>About Me</h2>
             <p>
-                The Real Time Sports Analytic Platform is a distributed data pipeline designed to process live lacrosse game streams, update player and team statistics, and generate live box scores. The project integrates PySpark, MongoDB, MSSQL, and Minio to simulate a real-world sports analytics environment.
+                I'm Madhumitha Saravanan, a Data Engineer and Data Scientist with a passion for designing scalable data solutions and transforming complex data into meaningful insights. 
+                My expertise lies in building and optimizing data pipelines, leveraging cloud platforms like AWS and Azure, and utilizing big data tools such as Spark and Hadoop to drive efficiency and innovation.
+            </p>
+            <p>
+                Currently pursuing an M.S. in Applied Data Science at Syracuse University (expected Dec 2024), I’ve built a strong foundation in machine learning, big data analytics, and cloud management. 
+                My technical expertise allows me to create end-to-end solutions that streamline processes, enhance performance, and enable data-driven decision-making.
             </p>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>Technologies Used</h2>
-            <ul>
-                <li><strong>PySpark</strong>: For distributed data processing.</li>
-                <li><strong>MongoDB</strong>: Stores real-time box scores.</li>
-                <li><strong>Microsoft SQL Server (MSSQL)</strong>: For team and player reference data.</li>
-                <li><strong>Minio</strong>: S3-compatible storage for game stream data.</li>
-                <li><strong>Apache Drill</strong>: SQL query engine for data integration.</li>
-                <li><strong>Jupyter Lab</strong>: Used for developing PySpark code.</li>
-            </ul>
-        </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://github.com/madhusaravanan27/Air-Travel-Scheduler-Using-CouchBase">Air Travel Scheduler Using CouchBase</a></li>
+            <li><a href="https://github.com/madhusaravanan27/VBAYETL">VBAYETL</a></li>
+            <li><a href="https://github.com/madhusaravanan27/Healthcare-Cost-Analysis-for-HMO">Healthcare Cost Analysis for HMO</a></li>
+            <li><a href="https://github.com/madhusaravanan27/Natural-Disasters">Natural Disasters</a></li>
+            <li><a href="https://github.com/madhusaravanan27/Covid-19-Immunity-Database-Management-System">Covid-19 Immunity Database Management System</a></li>
+            <li><a href="https://github.com/madhusaravanan27/Zillow-House-Value-Trend-Analysis">Zillow House Value Trend Analysis</a></li>
+            <li>
+                <a href="https://github.com/madhusaravanan27/Real-Time-Sports-Analytics-Platform">Real-Time Sports Analytics Platform (GitHub Repository)</a> 
+                | <a href="RealTime.html">Detailed Project Overview</a>
+            </li>
+            <li><a href="https://github.com/madhusaravanan27/Data-Analysis-for-Ischool">Data Analysis for iSchool</a></li>
+            <li><a href="https://github.com/madhusaravanan27/Crime-Classification-based-on-Geographical-area">Crime Classification based on Geographical Area</a></li>
+        </ul>
+    </section>
 
-        <div class="section">
-            <h2>Key Accomplishments</h2>
-            <ul>
-                <li><strong>Real-Time Data Stream Processing:</strong> Developed a PySpark pipeline to ingest and track real-time game events from Minio.</li>
-                <li><strong>Box Score Generation:</strong> Generated live JSON-formatted box scores, updated regularly in MongoDB for web access.</li>
-                <li><strong>Player and Team Statistics Update:</strong> Updated final team and player stats in MSSQL using PySpark for cumulative calculations.</li>
-                <li><strong>Database Integration and Querying:</strong> Queried integrated data from MSSQL, MongoDB, and Minio using Apache Drill.</li>
-                <li><strong>End-to-End Data Pipeline:</strong> Automated data ingestion, transformation, and real-time statistics updates, providing up-to-date insights throughout the game.</li>
-            </ul>
-        </div>
-
-        <!-- GitHub Link -->
-        <div class="github-link">
-            <p>View the project on <a href="https://github.com/madhusaravanan27/Real-Time-Sports-Analytics-Platform/" target="_blank">GitHub</a></p>
-        </div>
-    </div>
+    <!-- Footer Section -->
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/mithasaravanan7/">LinkedIn</a></p>
+    </footer>
 
 </body>
 </html>

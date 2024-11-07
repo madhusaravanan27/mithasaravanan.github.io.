@@ -3,160 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Madhumitha Saravanan</title>
+    <title>Madhumitha Saravanan | Data Engineer</title>
     <link rel="stylesheet" href="style.css">
     <style>
         /* Basic Styling */
         body {
             font-family: Arial, sans-serif;
-            background-color: #000000;
-            color: #ffffff;
+            background-color: #0a192f; /* Dark blue background */
+            color: #ccd6f6; /* Light text color */
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+            height: 100vh;
+            overflow: hidden;
         }
 
-        /* Main Container */
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            max-width: 1200px;
+        /* Navigation */
+        nav {
             width: 100%;
-            padding: 40px;
-            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            background-color: #0a192f;
+        }
+
+        nav a {
+            color: #64ffda; /* Teal color */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
             color: #ffffff;
         }
 
-        /* Left Section (Welcome and About) */
-        .welcome-section {
-            max-width: 600px;
-        }
-
-        .welcome-section h1 {
-            font-size: 3em;
-            margin: 0;
-            color: #00bfa5;
-        }
-
-        .welcome-section p {
-            margin-top: 20px;
-            line-height: 1.6;
-            color: #ffffff;
-        }
-
-        /* Right Section (Projects and Professional Experience) */
-        .projects-section, .experience-section {
+        /* Main Section Styling */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 800px;
             text-align: left;
+            margin-top: 80px;
+            padding: 20px;
         }
 
-        .projects-section h2, .experience-section h2 {
-            font-size: 1.8em;
-            color: #00bfa5;
-            margin-bottom: 20px;
-        }
-
-        .projects-section ul, .experience-section p {
-            color: #ffffff;
-            line-height: 1.6;
-        }
-
-        .projects-section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .projects-section li {
+        .main-content h1 {
+            color: #64ffda;
+            font-size: 1.2em;
+            font-weight: normal;
             margin-bottom: 10px;
         }
 
-        .projects-section a {
+        .main-content h2 {
             color: #ffffff;
+            font-size: 3em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .main-content h3 {
+            color: #8892b0;
+            font-size: 2.5em;
+            font-weight: 300;
+            margin: 0 0 20px;
+        }
+
+        .main-content p {
+            color: #8892b0;
+            font-size: 1.2em;
+            line-height: 1.5;
+            max-width: 600px;
+        }
+
+        .main-content a.button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 2px solid #64ffda;
+            color: #64ffda;
             text-decoration: none;
-            transition: color 0.3s;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
         }
 
-        .projects-section a:hover {
-            color: #00bfa5;
-        }
-
-        /* Profile Image Styling */
-        .profile-image {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        /* Footer */
-        footer {
-            width: 100%;
-            text-align: center;
-            padding: 20px;
-            background-color: #000000;
-            color: #00bfa5;
-            position: absolute;
-            bottom: 0;
-        }
-
-        footer a {
-            color: #00bfa5;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            color: #ffffff;
+        .main-content a.button:hover {
+            background-color: #64ffda;
+            color: #0a192f;
         }
     </style>
 </head>
 <body>
 
-    <!-- Main Container -->
-    <div class="container">
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf" target="_blank" class="button">Resume</a>
+    </nav>
 
-        <!-- Left Section: Welcome and About Me -->
-        <div class="welcome-section">
-            <img src="profile.jpg" alt="Madhumitha Saravanan" class="profile-image">
-            <h1>Welcome.</h1>
-            <p>
-                My name is Madhumitha Saravanan. I'm a Data Engineer and Data Scientist passionate about creating scalable data solutions, transforming data into actionable insights, and designing data-driven applications.
-                With expertise in AWS, Azure, Snowflake, and big data tools like Apache Spark, I leverage my skills to drive business intelligence and efficiency.
-            </p>
-        </div>
-
-        <!-- Right Section: Projects and Professional Experience -->
-        <div class="projects-section">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="https://github.com/madhusaravanan27/Zillow-House-Value-Trend-Analysis">Zillow House Value Trend Analysis</a></li>
-                <li><a href="https://github.com/madhusaravanan27/Real-Time-Sports-Analytics-Platform">Real-Time Sports Analytics Platform</a></li>
-                <li><a href="https://github.com/madhusaravanan27/Natural-Disasters">Natural Disasters Dashboard</a></li>
-                <li><a href="https://github.com/madhusaravanan27/Crime-Classification-based-on-Geographical-area">Crime Classification based on Geographical Area</a></li>
-                <li><a href="https://github.com/madhusaravanan27/Air-Travel-Scheduler-Using-CouchBase">Air Travel Scheduler Using CouchBase</a></li>
-            </ul>
-            
-            <div class="experience-section">
-                <h2>Professional Experience</h2>
-                <p>
-                    As a Data Engineer at Infosys Ltd, I led the design and implementation of a REST API orchestration layer using Java, Spring Boot, and Apache Camel, enabling seamless integration and efficient service delivery across three microservices within a telecommunications system.
-                    I developed and managed CI/CD pipelines utilizing Jenkins, AWS EC2, and Kubernetes, automating and optimizing deployment processes to ensure scalable, reliable operations across environments.
-                    To enhance security and data accuracy, I conducted thorough API testing with Postman, validating test cases through JSON responses for real-time reporting.
-                    Additionally, I documented microservices using Swagger, which improved transparency and facilitated smoother integration for team members.
-                    By adapting to evolving project requirements, I delivered agile, client-focused solutions that empowered data-driven decision-making.
-                    I also fostered a collaborative and innovative team culture through knowledge-sharing sessions, mentoring colleagues on best practices and new technologies.
-                </p>
-            </div>
-        </div>
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <h1>Hi, my name is</h1>
+        <h2>Madhumitha Saravanan.</h2>
+        <h3>I build data-driven solutions.</h3>
+        <p>
+            I’m a Data Engineer and Data Scientist specializing in creating scalable data solutions, 
+            transforming data into meaningful insights, and designing efficient data pipelines. 
+            Currently, I’m focused on building data-driven applications and optimizing system performance 
+            to support business intelligence and decision-making.
+        </p>
+        <a href="https://github.com/madhusaravanan27" class="button">Check out my GitHub</a>
     </div>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/mithasaravanan7/">LinkedIn</a> | <a href="https://github.com/madhusaravanan27">GitHub</a></p>
-    </footer>
 
 </body>
 </html>

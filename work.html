@@ -52,10 +52,67 @@
             margin-bottom: 20px;
         }
 
-        .main-content p {
+        /* Work Experience Card */
+        .experience-card {
+            background-color: #112240;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .experience-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+        }
+
+        .experience-details {
+            flex: 1;
+        }
+
+        .experience-details h2 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .experience-details h3 {
             color: #8892b0;
+            margin: 5px 0 15px;
             font-size: 1.2em;
+            font-weight: normal;
+        }
+
+        .experience-details p {
+            color: #8892b0;
             line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Skills Icons Row */
+        .skills {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .skill-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0a192f;
+            border: 1px solid #64ffda;
+        }
+
+        .skill-icon img {
+            width: 24px;
+            height: 24px;
         }
     </style>
 </head>
@@ -72,9 +129,39 @@
     <!-- Main Content Section -->
     <div class="main-content">
         <h1>Work Experience</h1>
-        <p>
-            As a Data Engineer at Infosys Ltd, I led the design and implementation of a REST API orchestration layer using Java, Spring Boot, and Apache Camel, enabling seamless integration and efficient service delivery across three microservices within a telecommunications system. I developed and managed CI/CD pipelines utilizing Jenkins, AWS EC2, and Kubernetes, automating and optimizing deployment processes to ensure scalable, reliable operations across environments. To enhance security and data accuracy, I conducted thorough API testing with Postman, validating test cases through JSON responses for real-time reporting. Additionally, I documented microservices using Swagger, which improved transparency and facilitated smoother integration for team members. By adapting to evolving project requirements, I delivered agile, client-focused solutions that empowered data-driven decision-making. I also fostered a collaborative and innovative team culture through knowledge-sharing sessions, mentoring colleagues on best practices and new technologies.
-        </p>
+
+        <!-- Experience Card -->
+        <div class="experience-card">
+            <!-- Company Logo -->
+            <img src="infosys.png" alt="Infosys Logo">
+            
+            <!-- Experience Details -->
+            <div class="experience-details">
+                <h2>Data Engineer</h2>
+                <h3>Infosys Ltd | April 2021 - December 2022</h3>
+                <p>
+                    As a Data Engineer at Infosys Ltd, I led the design and implementation of a REST API orchestration layer using Java, Spring Boot, and Apache Camel, enabling seamless integration and efficient service delivery across three microservices within a telecommunications system. I developed and managed CI/CD pipelines utilizing Jenkins, AWS EC2, and Kubernetes, automating and optimizing deployment processes to ensure scalable, reliable operations across environments.
+                </p>
+                <p>
+                    To enhance security and data accuracy, I conducted thorough API testing with Postman, validating test cases through JSON responses for real-time reporting. Additionally, I documented microservices using Swagger, which improved transparency and facilitated smoother integration for team members. By adapting to evolving project requirements, I delivered agile, client-focused solutions that empowered data-driven decision-making.
+                </p>
+                <p>
+                    I also fostered a collaborative and innovative team culture through knowledge-sharing sessions, mentoring colleagues on best practices and new technologies.
+                </p>
+
+                <!-- Skills Icons -->
+                <div class="skills">
+                    <div class="skill-icon"><img src="java-icon.png" alt="Java"></div>
+                    <div class="skill-icon"><img src="spring-boot-icon.png" alt="Spring Boot"></div>
+                    <div class="skill-icon"><img src="apache-camel-icon.png" alt="Apache Camel"></div>
+                    <div class="skill-icon"><img src="jenkins-icon.png" alt="Jenkins"></div>
+                    <div class="skill-icon"><img src="aws-icon.png" alt="AWS"></div>
+                    <div class="skill-icon"><img src="kubernetes-icon.png" alt="Kubernetes"></div>
+                    <div class="skill-icon"><img src="postman-icon.png" alt="Postman"></div>
+                    <div class="skill-icon"><img src="swagger-icon.png" alt="Swagger"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>

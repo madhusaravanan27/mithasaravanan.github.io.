@@ -9,8 +9,8 @@
         /* Basic Styling */
         body {
             font-family: Arial, sans-serif;
-            background-color: #000000; /* Black background */
-            color: #ffffff; /* White text */
+            background-color: #000000;
+            color: #ffffff;
             margin: 0;
             padding: 0;
             display: flex;
@@ -22,7 +22,7 @@
         .container {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             max-width: 1200px;
             width: 100%;
             padding: 40px;
@@ -38,7 +38,7 @@
         .welcome-section h1 {
             font-size: 3em;
             margin: 0;
-            color: #00bfa5; /* Teal color */
+            color: #00bfa5;
         }
 
         .welcome-section p {
@@ -47,15 +47,20 @@
             color: #ffffff;
         }
 
-        /* Right Section (Projects) */
-        .projects-section {
+        /* Right Section (Projects and Professional Experience) */
+        .projects-section, .experience-section {
             text-align: left;
         }
 
-        .projects-section h2 {
+        .projects-section h2, .experience-section h2 {
             font-size: 1.8em;
             color: #00bfa5;
             margin-bottom: 20px;
+        }
+
+        .projects-section ul, .experience-section p {
+            color: #ffffff;
+            line-height: 1.6;
         }
 
         .projects-section ul {
@@ -123,7 +128,7 @@
             </p>
         </div>
 
-        <!-- Right Section: Projects -->
+        <!-- Right Section: Projects and Professional Experience -->
         <div class="projects-section">
             <h2>Projects</h2>
             <ul>
@@ -133,6 +138,18 @@
                 <li><a href="https://github.com/madhusaravanan27/Crime-Classification-based-on-Geographical-area">Crime Classification based on Geographical Area</a></li>
                 <li><a href="https://github.com/madhusaravanan27/Air-Travel-Scheduler-Using-CouchBase">Air Travel Scheduler Using CouchBase</a></li>
             </ul>
+            
+            <div class="experience-section">
+                <h2>Professional Experience</h2>
+                <p>
+                    As a Data Engineer at Infosys Ltd, I led the design and implementation of a REST API orchestration layer using Java, Spring Boot, and Apache Camel, enabling seamless integration and efficient service delivery across three microservices within a telecommunications system.
+                    I developed and managed CI/CD pipelines utilizing Jenkins, AWS EC2, and Kubernetes, automating and optimizing deployment processes to ensure scalable, reliable operations across environments.
+                    To enhance security and data accuracy, I conducted thorough API testing with Postman, validating test cases through JSON responses for real-time reporting.
+                    Additionally, I documented microservices using Swagger, which improved transparency and facilitated smoother integration for team members.
+                    By adapting to evolving project requirements, I delivered agile, client-focused solutions that empowered data-driven decision-making.
+                    I also fostered a collaborative and innovative team culture through knowledge-sharing sessions, mentoring colleagues on best practices and new technologies.
+                </p>
+            </div>
         </div>
     </div>
 

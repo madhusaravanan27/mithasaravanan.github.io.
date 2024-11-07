@@ -4,88 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Madhumitha Saravanan</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
     <style>
         /* Basic Styling */
         body {
             font-family: Arial, sans-serif;
-            background-color: #e0f7fa;
-            color: #004d40;
+            background-color: #000000; /* Black background */
+            color: #ffffff; /* White text */
             margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Main Container */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+            padding: 40px;
+            box-sizing: border-box;
+            color: #ffffff;
+        }
+
+        /* Left Section (Welcome and About) */
+        .welcome-section {
+            max-width: 600px;
+        }
+
+        .welcome-section h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #00bfa5; /* Teal color */
+        }
+
+        .welcome-section p {
+            margin-top: 20px;
+            line-height: 1.6;
+            color: #ffffff;
+        }
+
+        /* Right Section (Projects) */
+        .projects-section {
+            text-align: left;
+        }
+
+        .projects-section h2 {
+            font-size: 1.8em;
+            color: #00bfa5;
+            margin-bottom: 20px;
+        }
+
+        .projects-section ul {
+            list-style-type: none;
             padding: 0;
         }
 
-        /* Header Styling */
-        header {
-            background-color: #004d40;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.2em;
-            margin: 5px 0;
-        }
-
-        /* Main Content Layout */
-        .content {
-            display: flex;
-            max-width: 1200px;
-            margin: 30px auto;
-            gap: 20px;
-            padding: 0 20px;
-        }
-
-        /* Profile Image */
-        .profile-image {
-            flex: 1;
-            text-align: center;
-        }
-
-        .profile-image img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* About, Skills, Work Experience, Projects */
-        .main-section {
-            flex: 3;
-        }
-
-        .section {
-            background-color: #ffffff;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .section h2 {
-            color: #00796b;
-            font-size: 1.8em;
+        .projects-section li {
             margin-bottom: 10px;
         }
 
-        /* Footer Styling */
-        footer {
-            background-color: #004d40;
+        .projects-section a {
             color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .projects-section a:hover {
+            color: #00bfa5;
+        }
+
+        /* Profile Image Styling */
+        .profile-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
             text-align: center;
-            padding: 15px;
+            padding: 20px;
+            background-color: #000000;
+            color: #00bfa5;
+            position: absolute;
+            bottom: 0;
         }
 
         footer a {
-            color: #b2dfdb;
+            color: #00bfa5;
             text-decoration: none;
-            font-weight: bold;
+            margin: 0 10px;
         }
 
         footer a:hover {
@@ -95,67 +110,29 @@
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Madhumitha Saravanan</h1>
-        <p>Data Engineer | Data Analyst | Data Scientist</p>
-    </header>
+    <!-- Main Container -->
+    <div class="container">
 
-    <!-- Main Content Section -->
-    <div class="content">
-
-        <!-- Profile Image -->
-        <div class="profile-image">
-            <img src="profile.jpg" alt="Madhumitha Saravanan">
+        <!-- Left Section: Welcome and About Me -->
+        <div class="welcome-section">
+            <img src="profile.jpg" alt="Madhumitha Saravanan" class="profile-image">
+            <h1>Welcome.</h1>
+            <p>
+                My name is Madhumitha Saravanan. I'm a Data Engineer and Data Scientist passionate about creating scalable data solutions, transforming data into actionable insights, and designing data-driven applications.
+                With expertise in AWS, Azure, Snowflake, and big data tools like Apache Spark, I leverage my skills to drive business intelligence and efficiency.
+            </p>
         </div>
 
-        <!-- Main Section -->
-        <div class="main-section">
-
-            <!-- About Me Section -->
-            <div class="section" id="about">
-                <h2>About Me</h2>
-                <p>I'm Madhumitha Saravanan, a data professional skilled in designing scalable data solutions, creating data-driven insights, and optimizing data pipelines. With expertise across cloud platforms like AWS, Azure, and Snowflake, I leverage tools like Apache Spark and Hadoop to enhance data efficiency.</p>
-                <p>Currently, I am completing my M.S. in Applied Data Science at Syracuse University, where I focus on big data management, machine learning, and data analytics. My technical background empowers me to deliver solutions that drive meaningful business impact.</p>
-            </div>
-
-            <!-- Skills Section -->
-            <div class="section" id="skills">
-                <h2>Skills</h2>
-                <p><strong>Programming Languages:</strong> Python, SQL, R, Java, Scala</p>
-                <p><strong>Data Tools:</strong> Apache Spark, Hadoop, Apache Airflow, DBT, Docker, Jenkins</p>
-                <p><strong>Databases:</strong> MSSQL, MySQL, PostgreSQL, MongoDB, Cassandra, Snowflake</p>
-                <p><strong>Cloud Platforms:</strong> AWS, Azure, Google Cloud Platform</p>
-            </div>
-
-            <!-- Work Experience Section -->
-            <div class="section" id="experience">
-                <h2>Work Experience</h2>
-                <p><strong>Data Engineer – Infosys Ltd (Apr 2021 – Dec 2022)</strong></p>
-                <ul>
-                    <li>Led the development of REST APIs, enhancing system efficiency by 15% using Java and Apache Camel.</li>
-                    <li>Streamlined deployment with CI/CD pipelines, improving deployment speed by 20% through Jenkins and AWS EC2.</li>
-                    <li>Built data-driven applications to improve real-time reporting and ensure data accuracy.</li>
-                </ul>
-                <p><strong>Data Researcher – Nexis, Syracuse University (Feb 2023 – Present)</strong></p>
-                <ul>
-                    <li>Enhanced data retrieval efficiency by 20% by optimizing data processes and statistical modeling.</li>
-                    <li>Applied machine learning models, achieving 85% prediction accuracy for cost models in healthcare analysis.</li>
-                </ul>
-            </div>
-
-            <!-- Projects Section -->
-            <div class="section" id="projects">
-                <h2>Projects</h2>
-                <ul>
-                    <li><a href="https://github.com/madhusaravanan27/Zillow-House-Value-Trend-Analysis">Zillow House Value Trend Analysis</a></li>
-                    <li><a href="https://github.com/madhusaravanan27/Real-Time-Sports-Analytics-Platform">Real-Time Sports Analytics Platform</a></li>
-                    <li><a href="https://github.com/madhusaravanan27/Natural-Disasters">Natural Disasters Dashboard</a></li>
-                    <li><a href="https://github.com/madhusaravanan27/Crime-Classification-based-on-Geographical-area">Crime Classification based on Geographical Area</a></li>
-                    <li><a href="https://github.com/madhusaravanan27/Air-Travel-Scheduler-Using-CouchBase">Air Travel Scheduler Using CouchBase</a></li>
-                </ul>
-            </div>
-
+        <!-- Right Section: Projects -->
+        <div class="projects-section">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://github.com/madhusaravanan27/Zillow-House-Value-Trend-Analysis">Zillow House Value Trend Analysis</a></li>
+                <li><a href="https://github.com/madhusaravanan27/Real-Time-Sports-Analytics-Platform">Real-Time Sports Analytics Platform</a></li>
+                <li><a href="https://github.com/madhusaravanan27/Natural-Disasters">Natural Disasters Dashboard</a></li>
+                <li><a href="https://github.com/madhusaravanan27/Crime-Classification-based-on-Geographical-area">Crime Classification based on Geographical Area</a></li>
+                <li><a href="https://github.com/madhusaravanan27/Air-Travel-Scheduler-Using-CouchBase">Air Travel Scheduler Using CouchBase</a></li>
+            </ul>
         </div>
     </div>
 

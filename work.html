@@ -59,19 +59,21 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             display: flex;
-            align-items: flex-start;
-            gap: 20px;
+            flex-direction: column;
+            align-items: center;
             margin-bottom: 20px;
         }
 
         .experience-card img {
-            width: 80px;
-            height: 80px;
+            width: 100px;
+            height: auto;
             border-radius: 5px;
+            margin-bottom: 15px;
         }
 
         .experience-details {
-            flex: 1;
+            text-align: left;
+            width: 100%;
         }
 
         .experience-details h2 {
@@ -105,6 +107,7 @@
             color: #64ffda;
             margin-bottom: 10px;
             font-size: 1.2em;
+            text-align: center;
         }
 
         .skills-list {
@@ -112,6 +115,13 @@
             gap: 15px;
             flex-wrap: wrap;
             justify-content: center;
+        }
+
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
 
         .skill-icon {
@@ -123,11 +133,17 @@
             background-color: #0a192f;
             border-radius: 5px;
             border: 1px solid #64ffda;
+            margin-bottom: 5px;
         }
 
         .skill-icon img {
             width: 24px;
             height: 24px;
+        }
+
+        .skill-name {
+            color: #8892b0;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -147,7 +163,7 @@
 
         <!-- Experience Card -->
         <div class="experience-card">
-            <!-- Company Logo -->
+            <!-- Company Logo at the Top -->
             <img src="Infosys.png" alt="Infosys Logo">
             
             <!-- Experience Details -->
@@ -164,14 +180,38 @@
         <div class="skills-column">
             <h3>Technologies & Tools</h3>
             <div class="skills-list">
-                <div class="skill-icon"><img src="java.png" alt="Java"></div>
-                <div class="skill-icon"><img src="springboot.png" alt="Spring Boot"></div>
-                <div class="skill-icon"><img src="apachecamel.png" alt="Apache Camel"></div>
-                <div class="skill-icon"><img src="jenkins.png" alt="Jenkins"></div>
-                <div class="skill-icon"><img src="aws.png" alt="AWS"></div>
-                <div class="skill-icon"><img src="kubernetes.png" alt="Kubernetes"></div>
-                <div class="skill-icon"><img src="postman.png" alt="Postman"></div>
-                <div class="skill-icon"><img src="swagger.png" alt="Swagger"></div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img src="java.png" alt="Java"></div>
+                    <span class="skill-name">Java</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img src="springboot.png" alt="Spring Boot"></div>
+                    <span class="skill-name">Spring Boot</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img src="apachecamel.png" alt="Apache Camel"></div>
+                    <span class="skill-name">Apache Camel</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img src="jenkins.png" alt="Jenkins"></div>
+                    <span class="skill-name">Jenkins</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img src="aws.png" alt="AWS"></div>
+                    <span class="skill-name">AWS</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img src="kubernetes.png" alt="Kubernetes"></div>
+                    <span class="skill-name">Kubernetes</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img src="postman.png" alt="Postman"></div>
+                    <span class="skill-name">Postman</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img src="swagger.png" alt="Swagger"></div>
+                    <span class="skill-name">Swagger</span>
+                </div>
             </div>
         </div>
     </div>

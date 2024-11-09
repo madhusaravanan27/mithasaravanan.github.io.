@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Engineering Projects - Madhumitha Saravanan</title>
+    <title>Visualization Project - Madhumitha Saravanan</title>
     <link rel="stylesheet" href="style.css">
     <style>
         /* Basic Styling */
@@ -14,37 +14,27 @@
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
             min-height: 100vh;
+            flex-direction: column;
         }
 
         /* Main Content Styling */
         .main-content {
-            width: 90%;
-            max-width: 1200px;
-            margin-top: 30px;
+            width: 100%;
+            max-width: 600px;
             padding: 20px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         h1 {
             color: #64ffda;
             font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        p.subtitle {
-            color: #8892b0;
-            font-size: 1.2em;
-            margin-bottom: 40px;
-        }
-
-        /* Project Grid Styling */
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2 columns */
-            gap: 20px;
+            margin-bottom: 20px;
         }
 
         /* Project Card Styling */
@@ -53,24 +43,32 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             overflow: hidden;
-            text-align: left;
-            color: #ccd6f6;
+            width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            align-items: center;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .project-card-content {
             padding: 20px;
+            text-align: center;
         }
 
         .project-card h3 {
             color: #64ffda;
             font-size: 1.5em;
-            margin-bottom: 10px;
+            margin: 0 0 10px;
         }
 
         .project-card p {
             color: #8892b0;
             font-size: 1em;
-            line-height: 1.5;
             margin-bottom: 20px;
         }
 
@@ -85,7 +83,6 @@
             font-weight: bold;
             text-align: center;
             transition: background-color 0.3s ease;
-            margin-top: auto;
         }
 
         .project-card a:hover {
@@ -94,71 +91,36 @@
             border: 2px solid #64ffda;
         }
 
-        /* Back to Project Section Link */
+        /* Back Link Styling */
         .back-link {
-            margin-top: 20px;
+            margin-bottom: 20px;
             color: #64ffda;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1em;
-            display: inline-block;
         }
 
         .back-link:hover {
             text-decoration: underline;
         }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .project-grid {
-                grid-template-columns: 1fr; /* 1 column on smaller screens */
-            }
-        }
-
     </style>
 </head>
 <body>
 
-    <!-- Back to Project Section Link -->
-    <a href="project.html" class="back-link">&larr; Back to Project Section</a>
+    <!-- Back to Projects Link -->
+    <a href="projects.html" class="back-link">&larr; Back to Projects</a>
 
     <!-- Main Content Section -->
     <div class="main-content">
-        <h1>Data Engineering Projects</h1>
-        <p class="subtitle">Explore my data engineering projects, focusing on data pipelines, data warehousing, and real-time analytics.</p>
+        <h1>Visualization Project</h1>
 
-        <!-- Project Grid -->
-        <div class="project-grid">
-            <!-- Project Card 1: Covid-19 Immunity Database Management System -->
-            <div class="project-card">
-                <h3>Covid-19 Immunity Database Management System</h3>
-                <p>This project manages patient and clinic data, tracking COVID-19 exposure, testing, and vaccination details. It enables healthcare providers to deliver timely, data-driven decisions.</p>
-                <p><strong>Technologies:</strong> SQL, Azure Data Studio</p>
-                <a href="https://github.com/madhusaravanan27/Covid-19-Immunity-Database-Management-System" target="_blank">View Project on GitHub</a>
-            </div>
-
-            <!-- Project Card 2: iSchool Data Analytics on Course Registration -->
-            <div class="project-card">
-                <h3>iSchool Data Analytics on Course Registration</h3>
-                <p>Analyzes course registration data with distributed databases, integrating multiple sources to generate insights on course enrollments and curricular relationships.</p>
-                <p><strong>Technologies:</strong> PySpark, MongoDB, Minio, Cassandra, Elasticsearch, Kibana, Neo4j</p>
-                <a href="https://github.com/madhusaravanan27/Data-Analysis-for-Ischool" target="_blank">View Project on GitHub</a>
-            </div>
-
-            <!-- Project Card 3: VBAY Database Data Warehouse Project -->
-            <div class="project-card">
-                <h3>VBAY Database Data Warehouse Project</h3>
-                <p>Built a data warehouse for VBAY, enabling efficient reporting and analysis for sales, ratings, and bidding processes across various locations.</p>
-                <p><strong>Technologies:</strong> DBT, Snowflake, GitHub</p>
-                <a href="https://github.com/madhusaravanan27/VBAYETL" target="_blank">View Project on GitHub</a>
-            </div>
-
-            <!-- Project Card 4: Real Time Sports Analytic Platform -->
-            <div class="project-card">
-                <h3>Real Time Sports Analytic Platform</h3>
-                <p>Developed a real-time analytics platform for live lacrosse game streams, tracking player and team stats and generating live box scores for web integration.</p>
-                <p><strong>Technologies:</strong> PySpark, MongoDB, MSSQL, Minio, Apache Drill</p>
-                <a href="https://github.com/madhusaravanan27/Real-Time-Sports-Analytics-Platform" target="_blank">View Project on GitHub</a>
+        <!-- Project Card -->
+        <div class="project-card">
+            <img src="/mnt/data/image.png" alt="Natural Disasters Project">
+            <div class="project-card-content">
+                <h3>A Visual Exploration of Natural Disasters and Economic Impact</h3>
+                <p>This project analyzes natural disasters in the USA (2000-2020) using Tableau dashboards to reveal trends in occurrences, recovery times, and economic impact.</p>
+                <a href="https://github.com/madhusaravanan27/Natural-Disasters" target="_blank">View Project on GitHub</a>
             </div>
         </div>
     </div>

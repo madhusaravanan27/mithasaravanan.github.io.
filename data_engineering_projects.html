@@ -43,7 +43,7 @@
         /* Project Grid Styling */
         .project-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
             gap: 20px;
         }
 
@@ -94,6 +94,13 @@
             border: 2px solid #64ffda;
         }
 
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project-grid {
+                grid-template-columns: 1fr; /* 1 column on smaller screens */
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -110,7 +117,7 @@
                 <h3>Covid-19 Immunity Database Management System</h3>
                 <p>This project manages patient and clinic data, tracking COVID-19 exposure, testing, and vaccination details. It enables healthcare providers to deliver timely, data-driven decisions.</p>
                 <p><strong>Technologies:</strong> SQL, Azure Data Studio</p>
-                <a href="https://github.com/yourgithub/Covid-19-Immunity-Database-Management" target="_blank">View Project</a>
+                <a href="https://github.com/madhusaravanan27/Covid-19-Immunity-Database-Management-System" target="_blank">View Project on GitHub</a>
             </div>
 
             <!-- Project Card 2: iSchool Data Analytics on Course Registration -->
@@ -118,7 +125,7 @@
                 <h3>iSchool Data Analytics on Course Registration</h3>
                 <p>Analyzes course registration data with distributed databases, integrating multiple sources to generate insights on course enrollments and curricular relationships.</p>
                 <p><strong>Technologies:</strong> PySpark, MongoDB, Minio, Cassandra, Elasticsearch, Kibana, Neo4j</p>
-                <a href="https://github.com/yourgithub/iSchool-Data-Analytics" target="_blank">View Project</a>
+                <a href="https://github.com/madhusaravanan27/Data-Analysis-for-Ischool" target="_blank">View Project on GitHub</a>
             </div>
 
             <!-- Project Card 3: VBAY Database Data Warehouse Project -->
@@ -126,7 +133,7 @@
                 <h3>VBAY Database Data Warehouse Project</h3>
                 <p>Built a data warehouse for VBAY, enabling efficient reporting and analysis for sales, ratings, and bidding processes across various locations.</p>
                 <p><strong>Technologies:</strong> DBT, Snowflake, GitHub</p>
-                <a href="https://github.com/yourgithub/VBAY-Data-Warehouse" target="_blank">View Project</a>
+                <a href="https://github.com/madhusaravanan27/VBAYETL" target="_blank">View Project on GitHub</a>
             </div>
 
             <!-- Project Card 4: Real Time Sports Analytic Platform -->
@@ -134,7 +141,7 @@
                 <h3>Real Time Sports Analytic Platform</h3>
                 <p>Developed a real-time analytics platform for live lacrosse game streams, tracking player and team stats and generating live box scores for web integration.</p>
                 <p><strong>Technologies:</strong> PySpark, MongoDB, MSSQL, Minio, Apache Drill</p>
-                <a href="https://github.com/yourgithub/Real-Time-Sports-Analytics" target="_blank">View Project</a>
+                <a href="https://github.com/madhusaravanan27/Real-Time-Sports-Analytics-Platform" target="_blank">View Project on GitHub</a>
             </div>
         </div>
     </div>

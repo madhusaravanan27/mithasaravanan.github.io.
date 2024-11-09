@@ -40,8 +40,8 @@
 
         /* Main Content Styling */
         .main-content {
-            width: 80%;
-            max-width: 1000px;
+            width: 90%;
+            max-width: 1200px;
             margin-top: 30px;
             padding: 20px;
             text-align: center;
@@ -53,33 +53,68 @@
             margin-bottom: 10px;
         }
 
-        h2 {
-            color: #ccd6f6;
-            font-size: 1.8em;
-            margin-top: 30px;
-            margin-bottom: 10px;
-        }
-
-        p {
+        p.subtitle {
             color: #8892b0;
             font-size: 1.2em;
-            line-height: 1.5;
+            margin-bottom: 40px;
         }
 
-        /* Project Links */
-        .project-link {
+        /* Project Grid Styling */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* Project Card Styling */
+        .project-card {
+            background-color: #112240;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: left;
+            color: #ccd6f6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .project-card-content {
+            padding: 20px;
+        }
+
+        .project-card h3 {
+            color: #64ffda;
+            font-size: 1.5em;
+            margin: 0 0 10px;
+        }
+
+        .project-card p {
+            color: #8892b0;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        /* Button Styling */
+        .project-card a {
             display: inline-block;
-            margin-top: 20px;
             padding: 10px 20px;
             background-color: #64ffda;
             color: #0a192f;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            transition: all 0.3s ease;
+            text-align: center;
+            transition: background-color 0.3s ease;
         }
 
-        .project-link:hover {
+        .project-card a:hover {
             background-color: #0a192f;
             color: #64ffda;
             border: 2px solid #64ffda;
@@ -99,23 +134,41 @@
 
     <!-- Main Content Section -->
     <div class="main-content">
-        <h1>My Projects</h1>
-        <p>Explore a collection of my projects spanning data visualization, data engineering, ETL processes, machine learning, and data analytics.</p>
+        <h1>Recent Projects</h1>
+        <p class="subtitle">Below you can see some examples of my recent work. Click on a project to learn more about it.</p>
 
-        <!-- Visualization Projects Section -->
-        <h2>Visualization Projects</h2>
-        <p>Dive into projects where I've explored data visually, providing insights through dashboards and visual exploration techniques.</p>
-        <a href="visualization_projects.html" class="project-link">View Visualization Projects</a>
+        <!-- Project Grid -->
+        <div class="project-grid">
+            <!-- Visualization Projects Card -->
+            <div class="project-card">
+                <img src="visualization.png" alt="Visualization Project">
+                <div class="project-card-content">
+                    <h3>Visualization Projects</h3>
+                    <p>Explore my data visualization projects that focus on presenting data insights through visual mediums.</p>
+                    <a href="visualization_projects.html">View Project</a>
+                </div>
+            </div>
 
-        <!-- Data Engineering and ETL Projects Section -->
-        <h2>Data Engineering and ETL Projects</h2>
-        <p>Projects that focus on building data pipelines, ETL processes, and scalable data engineering solutions.</p>
-        <a href="data_engineering_projects.html" class="project-link">View Data Engineering & ETL Projects</a>
+            <!-- Data Engineering and ETL Projects Card -->
+            <div class="project-card">
+                <img src="ETL.png" alt="Data Engineering Project">
+                <div class="project-card-content">
+                    <h3>Data Engineering and ETL Projects</h3>
+                    <p>Discover my projects involving data pipelines, ETL processes, and scalable data engineering solutions.</p>
+                    <a href="data_engineering_projects.html">View Project</a>
+                </div>
+            </div>
 
-        <!-- Machine Learning and Analytics Projects Section -->
-        <h2>Machine Learning and Analytics Projects</h2>
-        <p>Explore my machine learning and analytics projects that leverage statistical models, machine learning algorithms, and predictive analytics.</p>
-        <a href="ml_analytics_projects.html" class="project-link">View Machine Learning & Analytics Projects</a>
+            <!-- Machine Learning and Analytics Projects Card -->
+            <div class="project-card">
+                <img src="ML.png" alt="Machine Learning Project">
+                <div class="project-card-content">
+                    <h3>Machine Learning and Analytics Projects</h3>
+                    <p>Explore my projects in machine learning, predictive analytics, and data-driven insights.</p>
+                    <a href="ml_analytics_projects.html">View Project</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>

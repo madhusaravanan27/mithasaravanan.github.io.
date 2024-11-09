@@ -54,11 +54,12 @@
         /* Profile Image Styling */
         .profile-image {
             width: 300px;
-            height: 300px;
-            border-radius: 50%;
+            height: 400px; /* Increase height for oval shape */
+            border-radius: 50% / 60%; /* Creates an oval shape */
             margin-right: 40px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             border: 4px solid #64ffda;
+            object-fit: cover; /* Ensures the image fills the oval shape */
         }
 
         /* Text Content Styling */

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning & Analytics Projects - Madhumitha Saravanan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a192f;
+            color: #ccd6f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 30px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #64ffda;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            color: #8892b0;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        /* Project Grid Styling */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 20px;
+        }
+
+        /* Project Card Styling */
+        .project-card {
+            background-color: #112240;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: left;
+            color: #ccd6f6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .project-card h3 {
+            color: #64ffda;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #8892b0;
+            font-size: 1em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Button Styling */
+        .project-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #64ffda;
+            color: #0a192f;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            margin-top: auto;
+        }
+
+        .project-card a:hover {
+            background-color: #0a192f;
+            color: #64ffda;
+            border: 2px solid #64ffda;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project-grid {
+                grid-template-columns: 1fr; /* 1 column on smaller screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <h1>Machine Learning & Analytics Projects</h1>
+        <p class="subtitle">Discover my projects focused on predictive modeling, data analytics, and data-driven insights.</p>
+
+        <!-- Project Grid -->
+        <div class="project-grid">
+            <!-- Project Card 1: Healthcare Cost Analysis for HMO -->
+            <div class="project-card">
+                <h3>Healthcare Cost Analysis for HMO</h3>
+                <p>Analyzed healthcare costs using predictive models (SVM, KSVM, Rpart) to identify high-risk individuals, enabling cost management and healthcare optimization for HMOs.</p>
+                <p><strong>Technologies:</strong> R, R Studio, CSV</p>
+                <a href="https://github.com/madhusaravanan27/Healthcare-Cost-Analysis-for-HMO" target="_blank">View Project on GitHub</a>
+            </div>
+
+            <!-- Project Card 2: Crime Classification Based on Geographical Area -->
+            <div class="project-card">
+                <h3>Crime Classification Based on Geographical Area</h3>
+                <p>Classified crime patterns by geography using machine learning techniques like RandomForest, XGBoost, and SimpleRNN, providing insights for public safety and policy planning.</p>
+                <p><strong>Technologies:</strong> Python, Pandas, Folium, Scikit-learn</p>
+                <a href="https://github.com/madhusaravanan27/Crime-Classification-based-on-Geographical-area" target="_blank">View Project on GitHub</a>
+            </div>
+
+            <!-- Project Card 3: Zillow Sales Trend Analysis -->
+            <div class="project-card">
+                <h3>Zillow Sales Trend Analysis</h3>
+                <p>Forecasted U.S. housing market trends using ARIMA, KNN, and CNN models to help stakeholders make data-driven decisions in real estate.</p>
+                <p><strong>Technologies:</strong> Python, Keras, TensorFlow, Statsmodels</p>
+                <a href="https://github.com/madhusaravanan27/Zillow-House-Value-Trend-Analysis" target="_blank">View Project on GitHub</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

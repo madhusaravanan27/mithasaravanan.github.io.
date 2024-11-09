@@ -74,6 +74,25 @@
             margin-bottom: 20px;
         }
 
+        /* Technologies Section Styling */
+        .technologies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .technologies img {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .technologies img:hover {
+            transform: scale(1.1);
+        }
+
         /* Button Styling */
         .project-card a {
             display: inline-block;
@@ -133,7 +152,10 @@
             <div class="project-card">
                 <h3>Covid-19 Immunity Database Management System</h3>
                 <p>This project manages patient and clinic data, tracking COVID-19 exposure, testing, and vaccination details. It enables healthcare providers to deliver timely, data-driven decisions.</p>
-                <p><strong>Technologies:</strong> SQL, Azure Data Studio</p>
+                <div class="technologies">
+                    <img src="SQL.png" alt="SQL">
+                    <img src="azure.png" alt="Azure Data Studio">
+                </div>
                 <a href="https://github.com/madhusaravanan27/Covid-19-Immunity-Database-Management-System" target="_blank">View Project on GitHub</a>
             </div>
 
@@ -141,7 +163,16 @@
             <div class="project-card">
                 <h3>iSchool Data Analytics on Course Registration</h3>
                 <p>Analyzes course registration data with distributed databases, integrating multiple sources to generate insights on course enrollments and curricular relationships.</p>
-                <p><strong>Technologies:</strong> PySpark, MongoDB, Minio, Cassandra, Elasticsearch, Kibana, Neo4j</p>
+                <div class="technologies">
+                    <img src="pyspark.png" alt="PySpark">
+                    <img src="docker.png" alt="Docker">
+                    <img src="mongo.png" alt="MongoDB">
+                    <img src="minio.png" alt="Minio">
+                    <img src="cassandra.png" alt="Cassandra">
+                    <img src="elastic.png" alt="Elasticsearch">
+                    <img src="kibana.png" alt="Kibana">
+                    <img src="neo4j.png" alt="Neo4j">
+                </div>
                 <a href="https://github.com/madhusaravanan27/Data-Analysis-for-Ischool" target="_blank">View Project on GitHub</a>
             </div>
 
@@ -149,7 +180,11 @@
             <div class="project-card">
                 <h3>VBAY Database Data Warehouse Project</h3>
                 <p>Built a data warehouse for VBAY, enabling efficient reporting and analysis for sales, ratings, and bidding processes across various locations.</p>
-                <p><strong>Technologies:</strong> DBT, Snowflake, GitHub</p>
+                <div class="technologies">
+                    <img src="dbt.png" alt="DBT">
+                    <img src="snowflake.png" alt="Snowflake">
+                    <img src="Github.png" alt="GitHub">
+                </div>
                 <a href="https://github.com/madhusaravanan27/VBAYETL" target="_blank">View Project on GitHub</a>
             </div>
 
@@ -157,7 +192,14 @@
             <div class="project-card">
                 <h3>Real Time Sports Analytic Platform</h3>
                 <p>Developed a real-time analytics platform for live lacrosse game streams, tracking player and team stats and generating live box scores for web integration.</p>
-                <p><strong>Technologies:</strong> PySpark, MongoDB, MSSQL, Minio, Apache Drill</p>
+                <div class="technologies">
+                    <img src="pyspark.png" alt="PySpark">
+                    <img src="docker.png" alt="Docker">
+                    <img src="mongo.png" alt="MongoDB">
+                    <img src="MSSQL.png" alt="MSSQL">
+                    <img src="minio.png" alt="Minio">
+                    <img src="drill.png" alt="Apache Drill">
+                </div>
                 <a href="https://github.com/madhusaravanan27/Real-Time-Sports-Analytics-Platform" target="_blank">View Project on GitHub</a>
             </div>
         </div>

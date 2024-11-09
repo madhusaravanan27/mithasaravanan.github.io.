@@ -94,6 +94,33 @@
             margin-bottom: 20px;
         }
 
+        /* Technologies Section Styling */
+        .technologies-heading {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #64ffda;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .technologies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .technologies img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .technologies img:hover {
+            transform: scale(1.1);
+        }
+
         /* Button Styling */
         .project-card a {
             display: inline-block;
@@ -141,7 +168,10 @@
             <div class="project-card">
                 <h3>Healthcare Cost Analysis for HMO</h3>
                 <p>Analyzed healthcare costs using predictive models (SVM, KSVM, Rpart) to identify high-risk individuals, enabling cost management and healthcare optimization for HMOs.</p>
-                <p><strong>Technologies:</strong> R, R Studio, CSV</p>
+                <div class="technologies-heading">Technologies Used:</div>
+                <div class="technologies">
+                    <img src="r.png" alt="R">
+                </div>
                 <a href="https://github.com/madhusaravanan27/Healthcare-Cost-Analysis-for-HMO" target="_blank">View Project on GitHub</a>
             </div>
 
@@ -149,7 +179,13 @@
             <div class="project-card">
                 <h3>Crime Classification Based on Geographical Area</h3>
                 <p>Classified crime patterns by geography using machine learning techniques like RandomForest, XGBoost, and SimpleRNN, providing insights for public safety and policy planning.</p>
-                <p><strong>Technologies:</strong> Python, Pandas, Folium, Scikit-learn</p>
+                <div class="technologies-heading">Technologies Used:</div>
+                <div class="technologies">
+                    <img src="python.png" alt="Python">
+                    <img src="pandas.png" alt="Pandas">
+                    <img src="matplot.png" alt="Matplotlib">
+                    <img src="scikit.png" alt="Scikit-learn">
+                </div>
                 <a href="https://github.com/madhusaravanan27/Crime-Classification-based-on-Geographical-area" target="_blank">View Project on GitHub</a>
             </div>
 
@@ -157,7 +193,13 @@
             <div class="project-card">
                 <h3>Zillow Sales Trend Analysis</h3>
                 <p>Forecasted U.S. housing market trends using ARIMA, KNN, and CNN models to help stakeholders make data-driven decisions in real estate.</p>
-                <p><strong>Technologies:</strong> Python, Keras, TensorFlow, Statsmodels</p>
+                <div class="technologies-heading">Technologies Used:</div>
+                <div class="technologies">
+                    <img src="python.png" alt="Python">
+                    <img src="keras.png" alt="Keras">
+                    <img src="tensorflow.png" alt="TensorFlow">
+                    <img src="statsmodels.png" alt="Statsmodels">
+                </div>
                 <a href="https://github.com/madhusaravanan27/Zillow-House-Value-Trend-Analysis" target="_blank">View Project on GitHub</a>
             </div>
         </div>

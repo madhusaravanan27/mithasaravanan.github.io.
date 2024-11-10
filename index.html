@@ -126,7 +126,7 @@
             bottom: 0;
             width: 100%;
             background-color: #112240;
-            padding: 10px 0;
+            padding: 15px 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -146,18 +146,20 @@
             transition: transform 0.3s;
         }
 
+        /* Social Icon Styling */
         .horizontal-bar img {
             width: 40px;
             height: 40px;
-            border-radius: 50%; /* Makes the image circular */
-            padding: 5px;
+            border-radius: 10%; /* Square shape with slight rounding */
+            padding: 8px;
             background-color: #0a192f;
-            transition: background-color 0.3s ease, transform 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .horizontal-bar a:hover img {
             background-color: #64ffda;
-            transform: scale(1.1); /* Slightly enlarges the icon on hover */
+            transform: scale(1.15); /* Enlarges the icon on hover */
         }
 
         /* Responsive Design Adjustments */
@@ -177,8 +179,8 @@
                 font-size: 1em;
             }
             .horizontal-bar img {
-                width: 30px;
-                height: 30px;
+                width: 35px;
+                height: 35px;
             }
         }
     </style>
@@ -218,7 +220,7 @@
     <div class="horizontal-bar">
         <span>Connect with Me:</span>
         <a href="https://www.linkedin.com/in/mithasaravanan7/" target="_blank">
-            <img src="link.png" alt="LinkedIn Icon">
+            <img src="linkedin.png" alt="LinkedIn Icon">
         </a>
         <a href="https://github.com/madhusaravanan27" target="_blank">
             <img src="Github.png" alt="GitHub Icon">

@@ -51,10 +51,12 @@
             flex-direction: column;
         }
 
-        /* Profile Image Container Styling */
+        /* Responsive Profile Image Container */
         .profile-image-container {
-            width: 200px;
-            height: 200px;
+            width: 20vw; /* Width is 20% of viewport width for responsiveness */
+            max-width: 200px; /* Maximum size */
+            min-width: 120px; /* Minimum size */
+            aspect-ratio: 1 / 1; /* Ensures container is a square */
             border-radius: 50%;
             border: 4px solid #64ffda;
             display: flex;
@@ -71,7 +73,6 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center 20%;
             border-radius: 50%;
         }
 
@@ -126,7 +127,7 @@
             bottom: 0;
             width: 100%;
             background-color: #112240;
-            padding: 15px 0;
+            padding: 10px 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -146,20 +147,13 @@
             transition: transform 0.3s;
         }
 
-        /* Social Icon Styling */
         .horizontal-bar img {
-            width: 40px;
-            height: 40px;
-            border-radius: 10%; /* Square shape with slight rounding */
-            padding: 8px;
-            background-color: #0a192f;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 30px;
+            height: 30px;
         }
 
-        .horizontal-bar a:hover img {
-            background-color: #64ffda;
-            transform: scale(1.15); /* Enlarges the icon on hover */
+        .horizontal-bar a:hover {
+            transform: scale(1.1);
         }
 
         /* Responsive Design Adjustments */
@@ -167,20 +161,11 @@
             .main-section {
                 padding: 10px;
             }
-            .profile-image-container {
-                width: 150px;
-                height: 150px;
-                margin-bottom: 15px;
-            }
             .content h2 {
                 font-size: 2em;
             }
             .content p {
                 font-size: 1em;
-            }
-            .horizontal-bar img {
-                width: 35px;
-                height: 35px;
             }
         }
     </style>

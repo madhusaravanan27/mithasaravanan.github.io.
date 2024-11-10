@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Madhumitha Saravanan</title>
+    <title>Overview | Madhumitha Saravanan</title>
     <style>
         /* Basic Styling */
         body {
@@ -50,10 +50,22 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s;
+            text-align: center; /* Center-aligning content */
         }
 
         .content-section:hover {
             transform: scale(1.01);
+        }
+
+        /* Logo Styling Inside the Content Card */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            width: 200px; /* Adjust size as needed */
+            height: auto;
         }
 
         .content-section h1 {
@@ -62,34 +74,50 @@
             margin-bottom: 20px;
             border-bottom: 2px solid #64ffda;
             padding-bottom: 10px;
-            text-align: center;
         }
 
         .content-section h2 {
             color: #ffffff;
-            font-size: 1.5em;
+            font-size: 1.8em;
             margin-top: 30px;
+            text-align: left;
         }
 
-        .teal-heading {
+        .project-title {
             color: #64ffda;
             font-weight: bold;
         }
 
-        .content-section p {
+        .learning-outcome {
+            color: #ffffff; /* White color for learning outcome bullet points */
+            font-weight: bold;
+        }
+
+        .content-section p, .content-section ul {
             color: #8892b0;
             font-size: 1.1em;
             line-height: 1.7;
-            margin: 10px 0;
+            text-align: left;
         }
 
         .content-section ul {
+            margin-top: 10px;
             padding-left: 20px;
         }
 
         .content-section li {
             margin-bottom: 10px;
-            color: #ccd6f6;
+            position: relative;
+            padding-left: 10px;
+            list-style: none; /* Remove default white bullet */
+            color: #ffffff; /* White color for the learning outcome content */
+        }
+
+        .content-section li:before {
+            content: '•';
+            color: #64ffda; /* Teal color bullet */
+            position: absolute;
+            left: 0;
         }
 
         /* Footer Styling */
@@ -106,56 +134,8 @@
 
         /* Responsive Design Adjustments */
         @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                align-items: center;
-                padding: 10px;
-            }
-
             .content-section {
                 padding: 15px;
-                margin-top: 10px;
-            }
-
-            .content-section h1 {
-                font-size: 1.5em;
-            }
-
-            .content-section h2 {
-                font-size: 1.3em;
-            }
-
-            .content-section p, .content-section li {
-                font-size: 1em;
-                line-height: 1.5;
-            }
-
-            footer {
-                padding: 10px 0;
-            }
-        }
-
-        @media (max-width: 480px) {
-            nav a {
-                margin: 5px;
-                font-size: 0.9em;
-            }
-
-            .content-section {
-                padding: 10px;
-            }
-
-            .content-section h1 {
-                font-size: 1.3em;
-            }
-
-            .content-section h2 {
-                font-size: 1.2em;
-            }
-
-            .content-section p, .content-section li {
-                font-size: 0.9em;
-                line-height: 1.4;
             }
         }
     </style>
@@ -165,38 +145,50 @@
     <!-- Navigation Bar -->
     <nav>
         <a href="index.html">Home</a>
-        <a href="overview.html">Overview</a>
+        <a href="overview.html" class="active">Overview</a>
         <a href="projects.html">Projects</a>
-        <a href="blog.html" class="active">Blog</a>
+        <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
     </nav>
 
     <!-- Main Content Section -->
     <div class="content-section">
-        <h1>Reflecting on My Journey in the Applied Data Science Program</h1>
+        
+        <!-- Logo Section Inside the Content Card -->
+        <div class="logo-container">
+            <img src="ischool.png" alt="Syracuse University School of Information Studies Logo">
+        </div>
 
-        <p>Reflecting on my time in the Applied Data Science program, I can see how transformative it has been both academically and professionally. I came into the program with a clear set of expectations about the skills I wanted to gain, but the experience exceeded them in ways I hadn’t anticipated. I’ve developed not only a strong foundation in data science but also an advanced understanding of big data management, cloud infrastructure, and the technical and ethical aspects of data handling. Each course and project pushed me further, giving me a well-rounded skill set and setting me on a clear path toward a career in data engineering.</p>
+        <h1>Program Overview</h1>
 
-        <h2>Expectations and Reality</h2>
-        <p>When I joined this program, my primary goal was to gain expertise in data handling, analytics, and modeling, with a focus on mastering the end-to-end data science lifecycle. I expected to learn technical skills in programming and data processing, as well as best practices for building predictive models and communicating insights effectively. Above all, I wanted to gain hands-on experience working with large datasets in both structured and unstructured forms and to familiarize myself with big data ecosystems and cloud platforms. I hoped to come away with the ability to independently build data pipelines, conduct meaningful analysis, and develop predictive models that could drive decision-making in a variety of contexts.</p>
-
-        <p>Looking back, the program delivered on these expectations and more. I now have experience across the data science lifecycle—from collecting, storing, and processing data to visualizing results and building models. Each course was a stepping stone, building on previous learning outcomes and preparing me for the next challenge. My favorite classes, Advanced Big Data Management (IST769) with Professor Michael Fudge and Data Warehouse (IST722) with Professor Chad Harper, were particularly instrumental in shaping my career aspirations. These classes introduced me to NoSQL databases like MongoDB, Cassandra, Elasticsearch, and Neo4j and taught me about dimensional modeling, data warehouse architecture, and business intelligence. Through these subjects, I found my passion for data engineering, and I’m excited to take these skills into a professional setting.</p>
-
-        <h2>Achieving Learning Outcomes through Projects</h2>
+        <h2>Program Learning Outcomes</h2>
+        <p>The master’s in Applied Data Science program is interdisciplinary, offering students a comprehensive education in data science fundamentals and advanced applications. The program aims to develop students' skills in:</p>
         <ul>
-            <li><span class="teal-heading">Collecting, Storing, and Accessing Data:</span> I gained expertise in data collection and storage through projects that required working with large datasets and utilizing various storage solutions. For example, in the <em>VBAY Database Data Warehouse Project</em>, I designed and implemented a data warehouse using Snowflake and DBT. This project required creating fact and dimension tables to support business processes such as sales, location analysis, and bidding.</li>
-            <li><span class="teal-heading">Creating Actionable Insights:</span> In the <em>Crime Classification Based on Geographical Area</em> project, I analyzed crime patterns in Los Angeles, identifying demographic trends, crime severity, and geographical hotspots. This project underscored the importance of understanding the end-user needs and tailoring analysis to be actionable and relevant.</li>
-            <li><span class="teal-heading">Applying Visualization and Predictive Modeling:</span> In the <em>Visual Exploration of Natural Disasters and Economic Impact in the USA (2000-2020)</em> project, I created interactive dashboards to explore the effects of natural disasters. This project helped me understand how visual analytics can make complex information accessible and understandable for broader audiences.</li>
-            <li><span class="teal-heading">Programming Proficiency in R and Python:</span> I frequently used Python for data manipulation, analysis, and visualization, reinforcing my programming skills in a practical context. Python has become my primary tool for data analysis, and I am confident in using libraries like Pandas, Scikit-Learn, and Plotly for a variety of data tasks.</li>
-            <li><span class="teal-heading">Communicating Insights:</span> Effective communication of insights was a constant focus. In the <em>VBAY Database Data Warehouse Project</em>, I not only created the data models but also presented the outcomes through reports and visualizations, making the technical data processes understandable for non-expert stakeholders.</li>
-            <li><span class="teal-heading">Applying Ethical Principles in Data Science:</span> Ethical considerations were woven into the program, particularly regarding data privacy, fairness, and transparency. In the <em>Crime Classification Based on Geographical Area</em> project, where sensitive demographic data was used, I applied techniques to anonymize and ensure ethical handling of information.</li>
+            <li><span class="learning-outcome">Data Collection, Storage, and Access:</span> Collecting, storing, and accessing data by identifying and leveraging applicable technologies.</li>
+            <li><span class="learning-outcome">Creating Actionable Insights:</span> Creating actionable insights across a range of contexts (societal, business, political) using the full data science lifecycle.</li>
+            <li><span class="learning-outcome">Visualization and Predictive Modeling:</span> Applying visualization and predictive models to generate actionable insights.</li>
+            <li><span class="learning-outcome">Programming Proficiency:</span> Utilizing programming languages like R and Python to support data analysis.</li>
+            <li><span class="learning-outcome">Communication of Insights:</span> Communicating insights via visualization and analytics to a broad audience, including both technical and non-technical stakeholders.</li>
+            <li><span class="learning-outcome">Ethics in Data Science:</span> Applying ethical principles in data science, such as fairness, bias reduction, transparency, and privacy.</li>
         </ul>
 
-        <h2>Key Projects and Their Contributions</h2>
+        <h2>High-Level Project Descriptions</h2>
+        <p>Throughout the program, I completed a range of projects that solidified my understanding of data science and gave me hands-on experience with industry-standard tools:</p>
         <ul>
-            <li><span class="teal-heading">VBAY Database Data Warehouse Project:</span> This project contributed to my education by giving me practical experience with data warehousing and cloud infrastructure. By building a dimensional model and using Snowflake and DBT, I learned how to organize data for scalable and efficient analysis.</li>
-            <li><span class="teal-heading">Crime Classification Based on Geographical Area:</span> The crime classification project allowed me to delve into machine learning and geospatial analysis, using clustering and classification models to identify trends in crime data.</li>
-            <li><span class="teal-heading">Visual Exploration of Natural Disasters and Economic Impact:</span> This project taught me about data storytelling through interactive dashboards. I used Tableau to create visualizations that made complex time-series data and economic impacts accessible and actionable.</li>
+            <li><span class="project-title">VBAY Database Data Warehouse Project:</span> Developed a data warehouse to centralize and optimize VBAY's data processes across business areas, including sales and bidding. This project leveraged tools like DBT and Snowflake to create dimension and fact tables, supporting efficient data analysis.</li>
+            <li><span class="project-title">Crime Classification Based on Geographical Area:</span> Analyzed crime patterns in Los Angeles using machine learning and data visualization to uncover insights into crime hotspots, demographics, and temporal patterns. Models such as RandomForest and XGBoost were used to predict crime occurrences, helping stakeholders make informed decisions.</li>
+            <li><span class="project-title">Visual Exploration of Natural Disasters and Economic Impact (2000-2020):</span> Explored the frequency, severity, and economic impact of natural disasters across the United States through interactive dashboards. Using tools like Tableau, this project provided stakeholders with actionable insights into disaster preparedness and recovery efforts.</li>
+        </ul>
+
+        <h2>Achievement of Program Learning Outcomes</h2>
+        <p>Each project allowed me to achieve specific program learning outcomes:</p>
+        <ul>
+            <li><span class="learning-outcome">Data Collection, Storage, and Access:</span> Mastered through the VBAY Data Warehouse Project, where I learned efficient data storage and retrieval techniques using Snowflake and DBT.</li>
+            <li><span class="learning-outcome">Creating Actionable Insight:</span> Realized in the Crime Classification project, which translated raw crime data into insights relevant to various stakeholders, from law enforcement to residents.</li>
+            <li><span class="learning-outcome">Visualization and Predictive Modeling:</span> Demonstrated in the Natural Disasters project through advanced visualization and predictive analysis to make insights accessible and actionable.</li>
+            <li><span class="learning-outcome">Programming Proficiency:</span> Strengthened through projects using Python and R, applying data transformation, analysis, and visualization techniques.</li>
+            <li><span class="learning-outcome">Communicating Insights:</span> Practiced in each project, especially through interactive dashboards and visual reports that convey complex insights to non-expert audiences.</li>
+            <li><span class="learning-outcome">Ethical Data Use:</span> Upheld across all projects, ensuring unbiased and respectful data handling, particularly in sensitive data contexts like crime analysis.</li>
         </ul>
     </div>
 

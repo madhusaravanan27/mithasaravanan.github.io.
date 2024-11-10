@@ -16,7 +16,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             overflow-x: hidden;
         }
 
@@ -49,15 +49,16 @@
             max-width: 1200px;
             margin: auto;
             padding: 20px;
+            flex-direction: column;
         }
 
         /* Profile Image Container Styling */
         .profile-image-container {
-            width: 220px;
-            height: 300px;
+            width: 200px;
+            height: 260px;
             border-radius: 50% / 60%; /* Oval shape */
             overflow: hidden;
-            margin-right: 40px;
+            margin-bottom: 20px; /* For spacing on smaller screens */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             display: flex;
             justify-content: center;
@@ -75,6 +76,7 @@
         /* Text Content Styling */
         .content {
             max-width: 600px;
+            text-align: center; /* Center align text for smaller screens */
         }
 
         .content h1 {
@@ -86,15 +88,16 @@
 
         .content h2 {
             color: #ffffff;
-            font-size: 3em;
+            font-size: 2.5em;
             font-weight: bold;
             margin: 10px 0;
         }
 
         .content p {
             color: #8892b0;
-            font-size: 1.2em;
+            font-size: 1.1em;
             line-height: 1.5;
+            padding: 0 10px; /* Adding padding for smaller screens */
         }
 
         .content .button {
@@ -150,6 +153,20 @@
             transform: scale(1.1);
         }
 
+        /* Responsive Design Adjustments */
+        @media (min-width: 768px) {
+            .main-section {
+                flex-direction: row; /* Side-by-side layout on larger screens */
+            }
+            .profile-image-container {
+                margin-right: 40px;
+                margin-bottom: 0; /* Remove bottom margin for desktop */
+            }
+            .content {
+                text-align: left;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -165,7 +182,7 @@
 
     <!-- Main Content Section -->
     <div class="main-section">
-        <!-- Profile Image Container without Border -->
+        <!-- Profile Image Container -->
         <div class="profile-image-container">
             <img src="profile.jpg" alt="Madhumitha Saravanan" class="profile-image">
         </div>

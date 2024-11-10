@@ -46,11 +46,11 @@
         /* About Section */
         #about {
             max-width: 900px;
-            background-color: rgba(17, 34, 64, 0.95); /* Slightly opaque background */
+            background-color: rgba(17, 34, 64, 0.95);
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            margin-top: 80px;
+            margin-top: 100px;
             line-height: 1.6;
             position: relative;
             z-index: 1;
@@ -95,10 +95,6 @@
             object-fit: cover;
         }
 
-        .content-section:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-
         .content-section p {
             flex: 1;
             color: #ccd6f6;
@@ -108,11 +104,15 @@
             padding: 10px;
         }
 
+        /* Ensuring alignment consistency for even-numbered sections */
+        .content-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             #about {
                 padding: 20px;
-                margin-top: 100px;
             }
 
             #about h2 {
@@ -121,7 +121,7 @@
 
             .content-section {
                 flex-direction: column;
-                text-align: center;
+                align-items: center;
                 gap: 15px;
             }
 

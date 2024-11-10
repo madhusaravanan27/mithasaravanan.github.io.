@@ -23,12 +23,14 @@
         nav {
             width: 100%;
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             padding: 20px;
             background-color: #0a192f;
+            box-sizing: border-box;
             position: fixed;
             top: 0;
             left: 0;
+            z-index: 10;
         }
 
         nav a {
@@ -36,6 +38,7 @@
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            padding: 10px 0;
         }
 
         nav a:hover {
@@ -59,7 +62,7 @@
         /* Background Image */
         body::before {
             content: '';
-            background-image: url('chennaiN.png');
+            background-image: url('chennai.png');
             background-size: cover;
             background-position: center;
             opacity: 0.2; /* Adjust opacity for aesthetic blend */
@@ -71,6 +74,7 @@
             z-index: -1; /* Place the background behind all content */
         }
 
+        /* Styling for Text and Images */
         #about h2 {
             color: #64ffda;
             font-size: 2em;
@@ -80,12 +84,37 @@
         #about p {
             color: #ccd6f6;
             font-size: 1.1em;
-            text-align: justify; /* Justifies text for better readability */
+            text-align: justify;
             margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
         }
 
         /* Responsive Design */
         @media (max-width: 600px) {
+            nav {
+                flex-wrap: wrap;
+                padding: 15px;
+                justify-content: center;
+            }
+            nav a {
+                margin: 5px;
+                font-size: 0.9em;
+                padding: 8px 0;
+            }
             #about {
                 padding: 20px;
             }
@@ -94,6 +123,14 @@
             }
             #about p {
                 font-size: 1em;
+            }
+            .image-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .image-container img {
+                width: 100%;
+                height: auto;
             }
         }
     </style>
@@ -117,15 +154,26 @@
             Originally from Chennai, India—a city rich in temples, coastal beauty, and vibrant cultural heritage—I grew up 
             immersed in an environment that celebrates both art and community.
         </p>
+        
+        <div class="image-container">
+            <img src="natyam.png" alt="Bharatnatyam Dance">
+        </div>
+        
         <p>
             As a trained Bharatnatyam dancer, I find joy in storytelling through movement, connecting deeply with my heritage 
             and expressing myself through this classical art form.
         </p>
+        
+        <div class="image-container">
+            <img src="cook.png" alt="Cooking">
+        </div>
+        
         <p>
             My love for culture also extends into the kitchen, where I explore diverse cuisines through cooking and baking. From recreating 
             the bold flavors of Chennai to experimenting with dishes from around the world, I see food as a way to connect, create, and share 
             memorable experiences with others.
         </p>
+        
         <p>
             With every step I take, whether dancing, cooking, or exploring new passions, I’m driven by a curiosity to learn, connect, and celebrate 
             the beauty in both the familiar and the new.

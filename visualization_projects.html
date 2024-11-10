@@ -22,8 +22,8 @@
 
         /* Main Content Styling */
         .main-content {
-            width: 100%;
-            max-width: 800px; /* Expanded to increase width */
+            width: 90%;
+            max-width: 800px;
             padding: 20px;
             text-align: center;
             display: flex;
@@ -33,8 +33,8 @@
 
         h1 {
             color: #64ffda;
-            font-size: 3em; /* Increased font size for the heading */
-            margin-bottom: 30px;
+            font-size: 2.5em;
+            margin-bottom: 20px;
         }
 
         /* Project Card Styling */
@@ -44,10 +44,14 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             overflow: hidden;
             width: 100%;
-            max-width: 800px; /* Larger card size */
             display: flex;
             flex-direction: column;
             align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
         }
 
         .project-card img {
@@ -57,38 +61,43 @@
         }
 
         .project-card-content {
-            padding: 30px; /* Increased padding for more space */
+            padding: 25px;
             text-align: center;
         }
 
         .project-card h3 {
             color: #64ffda;
-            font-size: 1.8em; /* Increased font size for the project title */
+            font-size: 1.8em;
             margin: 0 0 15px;
         }
 
         .project-card p {
             color: #8892b0;
-            font-size: 1.1em; /* Slightly larger font for description */
+            font-size: 1.1em;
             margin-bottom: 30px;
         }
 
         /* Technologies Section Styling */
         .technologies-used {
-            text-align: center;
-            margin-top: 10px;
+            margin-top: 20px;
         }
 
         .technologies-used h4 {
             color: #64ffda;
-            font-size: 1.5em;
+            font-size: 1.3em;
             margin-bottom: 10px;
+        }
+
+        .technologies-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
         .technologies-used img {
             width: 50px;
             height: 50px;
-            margin: 0 10px;
             transition: transform 0.3s;
         }
 
@@ -99,14 +108,14 @@
         /* Button Styling */
         .project-card a {
             display: inline-block;
-            padding: 12px 24px; /* Larger padding for button */
+            padding: 12px 24px;
             background-color: #64ffda;
             color: #0a192f;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            text-align: center;
-            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .project-card a:hover {
@@ -140,6 +149,7 @@
 
         <!-- Project Card -->
         <div class="project-card">
+            <img src="visualization-banner.jpg" alt="Project Visualization Banner">
             <div class="project-card-content">
                 <h3>A Visual Exploration of Natural Disasters and Economic Impact</h3>
                 <p>This project analyzes natural disasters in the USA (2000-2020) using Tableau dashboards to reveal trends in occurrences, recovery times, and economic impact.</p>
@@ -147,8 +157,10 @@
                 <!-- Technologies Used Section -->
                 <div class="technologies-used">
                     <h4>Technologies Used</h4>
-                    <img src="tableau.png" alt="Tableau">
-                    <img src="excel.png" alt="Excel">
+                    <div class="technologies-icons">
+                        <img src="tableau.png" alt="Tableau">
+                        <img src="excel.png" alt="Excel">
+                    </div>
                 </div>
                 
                 <a href="https://github.com/madhusaravanan27/Natural-Disasters" target="_blank">View Project on GitHub</a>

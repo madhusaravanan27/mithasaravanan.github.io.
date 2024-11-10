@@ -26,6 +26,9 @@
             justify-content: flex-end;
             padding: 20px;
             background-color: #0a192f;
+            position: fixed;
+            top: 0;
+            left: 0;
         }
 
         nav a {
@@ -42,24 +45,56 @@
         /* About Section */
         #about {
             max-width: 800px;
-            background-color: #112240;
-            padding: 20px;
+            background-color: rgba(17, 34, 64, 0.9); /* Semi-transparent overlay */
+            padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            margin-top: 80px; /* Adds space below the fixed nav */
             text-align: center;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1; /* Ensure content stays on top of background */
+        }
+
+        /* Background Image */
+        body::before {
+            content: '';
+            background-image: url('chennai.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2; /* Adjust opacity for aesthetic blend */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Place the background behind all content */
         }
 
         #about h2 {
             color: #64ffda;
-            font-size: 1.8em;
-            margin-bottom: 15px;
+            font-size: 2em;
+            margin-bottom: 20px;
         }
 
         #about p {
             color: #ccd6f6;
-            line-height: 1.6;
             font-size: 1.1em;
-            text-align: left;
+            text-align: justify; /* Justifies text for better readability */
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            #about {
+                padding: 20px;
+            }
+            #about h2 {
+                font-size: 1.6em;
+            }
+            #about p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
@@ -70,16 +105,31 @@
         <a href="index.html">Home</a>
         <a href="skills.html">Skills</a>
         <a href="work.html">Experience</a>
-        <a href="project.html">Skills</a>
+        <a href="project.html">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Fueled by creativity and a love for tradition, I bring a unique blend of passion and curiosity to all that I do. Originally from Chennai, India—a city rich in temples, coastal beauty, and vibrant cultural heritage—I grew up immersed in an environment that celebrates both art and community. As a trained Bharatnatyam dancer, I find joy in storytelling through movement, connecting deeply with my heritage and expressing myself through this classical art form.</p>
-
-        <p>My love for culture also extends into the kitchen, where I explore diverse cuisines through cooking and baking. From recreating the bold flavors of Chennai to experimenting with dishes from around the world, I see food as a way to connect, create, and share memorable experiences with others. With every step I take, whether dancing, cooking, or exploring new passions, I’m driven by a curiosity to learn, connect, and celebrate the beauty in both the familiar and the new.</p>
+        <p>
+            Fueled by creativity and a love for tradition, I bring a unique blend of passion and curiosity to all that I do. 
+            Originally from Chennai, India—a city rich in temples, coastal beauty, and vibrant cultural heritage—I grew up 
+            immersed in an environment that celebrates both art and community.
+        </p>
+        <p>
+            As a trained Bharatnatyam dancer, I find joy in storytelling through movement, connecting deeply with my heritage 
+            and expressing myself through this classical art form.
+        </p>
+        <p>
+            My love for culture also extends into the kitchen, where I explore diverse cuisines through cooking and baking. From recreating 
+            the bold flavors of Chennai to experimenting with dishes from around the world, I see food as a way to connect, create, and share 
+            memorable experiences with others.
+        </p>
+        <p>
+            With every step I take, whether dancing, cooking, or exploring new passions, I’m driven by a curiosity to learn, connect, and celebrate 
+            the beauty in both the familiar and the new.
+        </p>
     </section>
 
 </body>

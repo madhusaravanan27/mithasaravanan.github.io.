@@ -55,8 +55,8 @@
         .profile-image-container {
             width: 200px;
             height: 200px;
-            border-radius: 50%; /* Circular shape */
-            border: 4px solid #64ffda; /* Teal outline */
+            border-radius: 50%;
+            border: 4px solid #64ffda;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -71,7 +71,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center 20%; /* Adjusted to move image down */
+            object-position: center 20%;
             border-radius: 50%;
         }
 
@@ -156,19 +156,22 @@
         }
 
         /* Responsive Design Adjustments */
-        @media (min-width: 768px) {
+        @media (max-width: 768px) {
             .main-section {
-                flex-direction: row;
+                padding: 10px;
             }
             .profile-image-container {
-                margin-right: 40px;
-                margin-bottom: 0;
+                width: 150px;
+                height: 150px;
+                margin-bottom: 15px;
             }
-            .content {
-                text-align: left;
+            .content h2 {
+                font-size: 2em;
+            }
+            .content p {
+                font-size: 1em;
             }
         }
-
     </style>
 </head>
 <body>

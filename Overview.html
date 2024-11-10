@@ -19,6 +19,17 @@
             overflow-x: hidden;
         }
 
+        /* Logo Styling */
+        .logo-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .logo-container img {
+            width: 200px; /* Adjust size as needed */
+            height: auto;
+        }
+
         /* Navigation */
         nav {
             width: 100%;
@@ -45,7 +56,7 @@
         .content-section {
             max-width: 800px;
             padding: 20px;
-            margin-top: 40px;
+            margin-top: 20px;
             background-color: #112240;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -77,7 +88,7 @@
         }
 
         .learning-outcome {
-            color: #ffd700; /* Gold color for highlighting learning outcomes */
+            color: #ffffff; /* White color for learning outcome bullet points */
             font-weight: bold;
         }
 
@@ -97,6 +108,7 @@
             position: relative;
             padding-left: 10px;
             list-style: none; /* Remove default white bullet */
+            color: #ffffff; /* White color for the learning outcome content */
         }
 
         .content-section li:before {
@@ -128,6 +140,11 @@
 </head>
 <body>
 
+    <!-- Logo Section -->
+    <div class="logo-container">
+        <img src="ischool.png" alt="Syracuse University School of Information Studies Logo">
+    </div>
+
     <!-- Navigation Bar -->
     <nav>
         <a href="index.html">Home</a>
@@ -144,12 +161,12 @@
         <h2>Program Learning Outcomes</h2>
         <p>The master’s in Applied Data Science program is interdisciplinary, offering students a comprehensive education in data science fundamentals and advanced applications. The program aims to develop students' skills in:</p>
         <ul>
-            <li class="learning-outcome">Collecting, storing, and accessing data by identifying and leveraging applicable technologies.</li>
-            <li class="learning-outcome">Creating actionable insights across a range of contexts (societal, business, political) using the full data science lifecycle.</li>
-            <li class="learning-outcome">Applying visualization and predictive models to generate actionable insights.</li>
-            <li class="learning-outcome">Utilizing programming languages like R and Python to support data analysis.</li>
-            <li class="learning-outcome">Communicating insights via visualization and analytics to a broad audience, including both technical and non-technical stakeholders.</li>
-            <li class="learning-outcome">Applying ethical principles in data science, such as fairness, bias reduction, transparency, and privacy.</li>
+            <li><span class="learning-outcome">Data Collection, Storage, and Access:</span> Collecting, storing, and accessing data by identifying and leveraging applicable technologies.</li>
+            <li><span class="learning-outcome">Creating Actionable Insights:</span> Creating actionable insights across a range of contexts (societal, business, political) using the full data science lifecycle.</li>
+            <li><span class="learning-outcome">Visualization and Predictive Modeling:</span> Applying visualization and predictive models to generate actionable insights.</li>
+            <li><span class="learning-outcome">Programming Proficiency:</span> Utilizing programming languages like R and Python to support data analysis.</li>
+            <li><span class="learning-outcome">Communication of Insights:</span> Communicating insights via visualization and analytics to a broad audience, including both technical and non-technical stakeholders.</li>
+            <li><span class="learning-outcome">Ethics in Data Science:</span> Applying ethical principles in data science, such as fairness, bias reduction, transparency, and privacy.</li>
         </ul>
 
         <h2>High-Level Project Descriptions</h2>

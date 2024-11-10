@@ -45,12 +45,12 @@
 
         /* About Section */
         #about {
-            max-width: 800px;
-            background-color: rgba(17, 34, 64, 0.9);
+            max-width: 900px;
+            background-color: rgba(17, 34, 64, 0.95); /* Slightly opaque background */
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            margin-top: 100px;
+            margin-top: 80px;
             line-height: 1.6;
             position: relative;
             z-index: 1;
@@ -82,16 +82,17 @@
         .content-section {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            gap: 20px;
         }
 
         .content-section img {
-            max-width: 150px;
-            max-height: 150px;
+            width: 40%;
+            max-width: 200px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             object-fit: cover;
-            margin: 0 20px;
         }
 
         .content-section:nth-child(even) {
@@ -100,27 +101,18 @@
 
         .content-section p {
             flex: 1;
-            margin: 0 20px;
             color: #ccd6f6;
             font-size: 1.1em;
             text-align: justify;
+            margin: 0;
+            padding: 10px;
         }
 
         /* Responsive Design */
-        @media (max-width: 600px) {
-            nav {
-                flex-wrap: wrap;
-                padding: 15px;
-                justify-content: center;
-            }
-
-            nav a {
-                margin: 5px;
-                font-size: 0.9em;
-            }
-
+        @media (max-width: 768px) {
             #about {
                 padding: 20px;
+                margin-top: 100px;
             }
 
             #about h2 {
@@ -130,12 +122,16 @@
             .content-section {
                 flex-direction: column;
                 text-align: center;
+                gap: 15px;
             }
 
             .content-section img {
-                width: 100%;
+                width: 80%;
                 height: auto;
-                margin: 10px 0;
+            }
+
+            .content-section p {
+                text-align: center;
             }
         }
     </style>
@@ -159,10 +155,10 @@
         <div class="content-section">
             <p>
                 Fueled by creativity and a love for tradition, I bring a unique blend of passion and curiosity to all that I do. 
-                Originally from Chennai, India—a city rich in temples, coastal beauty, and vibrant cultural heritage—I grew up 
+                Originally from Chennai, India a city rich in temples, coastal beauty, and vibrant cultural heritage I grew up 
                 immersed in an environment that celebrates both art and community.
             </p>
-            <img src="chennai.png" alt="Chennai Landscape">
+            <img src="chennaiN.png" alt="Chennai Landscape">
         </div>
 
         <!-- Section 2: Bharatnatyam Dance -->

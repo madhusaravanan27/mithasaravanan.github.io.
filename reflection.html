@@ -26,12 +26,21 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            margin: 20px;
         }
 
         .video-container h1 {
             color: #64ffda;
             font-size: 2em;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+        }
+
+        .video-container p {
+            color: #8892b0;
+            font-size: 1.1em;
+            margin: 15px 0;
+            line-height: 1.6;
         }
 
         .video-container video {
@@ -39,6 +48,7 @@
             height: auto;
             border: 2px solid #64ffda;
             border-radius: 8px;
+            margin: 20px 0;
         }
 
         .back-link {
@@ -61,10 +71,20 @@
 <body>
     <div class="video-container">
         <h1>Reflection Video</h1>
+        <p>
+            This video captures my journey through the Applied Data Science program at Syracuse University. 
+            I reflect on the skills I have developed, the projects I have worked on, and how the program has 
+            shaped my career aspirations. From building scalable data pipelines to analyzing big data, this program 
+            has been an incredible learning experience.
+        </p>
         <video controls>
-            <source src="reflection.mp4" type="video/mp4">
+            <source src="video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        <p>
+            I am excited to share these reflections with you and hope this provides insights into how the 
+            program has prepared me for real-world challenges in data engineering and analytics.
+        </p>
         <div class="back-link">
             <a href="index.html">← Back to Home</a>
         </div>

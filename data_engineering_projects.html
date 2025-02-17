@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Engineering Projects - Madhumitha Saravanan</title>
+    <title>Cloud and Data Engineering Projects - Madhumitha Saravanan</title>
     <link rel="stylesheet" href="style.css">
     <style>
         /* Basic Styling */
@@ -43,7 +43,7 @@
         /* Project Grid Styling */
         .project-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
 
@@ -138,7 +138,7 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             .project-grid {
-                grid-template-columns: 1fr; /* 1 column on smaller screens */
+                grid-template-columns: 1fr;
             }
         }
 
@@ -151,15 +151,42 @@
 
     <!-- Main Content Section -->
     <div class="main-content">
-        <h1>Data Engineering Projects</h1>
+        <h1>Cloud and Data Engineering Projects</h1>
 
-        
         <!-- Project Grid -->
         <div class="project-grid">
-            <!-- Project Card 1: Covid-19 Immunity Database Management System -->
+            <!-- Project 1: Retail Sales Data Transformation and Analytics Pipeline -->
+            <div class="project-card">
+                <h3>Retail Sales Data Transformation and Analytics Pipeline</h3>
+                <p>Designed an automated ETL pipeline to process retail sales data using AWS Glue and Redshift. Step Functions and EventBridge orchestrate scheduling for efficient data workflows.</p>
+                <div class="technologies-heading">Technologies Used:</div>
+                <div class="technologies">
+                    <img src="s3.png" alt="S3">
+                    <img src="glue.png" alt="AWS Glue">
+                    <img src="redshift.png" alt="Redshift">
+                    <img src="stepfunctions.png" alt="Step Functions">
+                    <img src="eventbridge.png" alt="EventBridge">
+                </div>
+                <a href="https://github.com/madhusaravanan27/Retail-Sales-Data-Transformation-and-Analytics-Pipeline-Using-AWSGlue-and-Redshift" target="_blank">View Project on GitHub</a>
+            </div>
+
+            <!-- Project 2: Azure Heart Disease Prediction Pipeline -->
+            <div class="project-card">
+                <h3>Azure Heart Disease Prediction Pipeline</h3>
+                <p>Built an end-to-end machine learning pipeline on Azure, utilizing Data Factory for ETL, Databricks for ML processing, and Data Lake for storage.</p>
+                <div class="technologies-heading">Technologies Used:</div>
+                <div class="technologies">
+                    <img src="azuredatafactory.png" alt="Azure Data Factory">
+                    <img src="azuredatabricks.png" alt="Azure Databricks">
+                    <img src="azuredatalake.png" alt="Azure Data Lake">
+                </div>
+                <a href="https://github.com/madhusaravanan27/AzureHeartDiseasePredictionPipeline" target="_blank">View Project on GitHub</a>
+            </div>
+
+            <!-- Project 3: Covid-19 Immunity Database Management System -->
             <div class="project-card">
                 <h3>Covid-19 Immunity Database Management System</h3>
-                <p>This project manages patient and clinic data, tracking COVID-19 exposure, testing, and vaccination details. It enables healthcare providers to deliver timely, data-driven decisions.</p>
+                <p>Centralized system for tracking COVID-19 exposure, vaccinations, and immunity status, helping healthcare professionals make data-driven decisions.</p>
                 <div class="technologies-heading">Technologies Used:</div>
                 <div class="technologies">
                     <img src="SQL.png" alt="SQL">
@@ -168,10 +195,10 @@
                 <a href="https://github.com/madhusaravanan27/Covid-19-Immunity-Database-Management-System" target="_blank">View Project on GitHub</a>
             </div>
 
-            <!-- Project Card 2: iSchool Data Analytics on Course Registration -->
+            <!-- Project 4: iSchool Data Analytics on Course Registration -->
             <div class="project-card">
                 <h3>iSchool Data Analytics on Course Registration</h3>
-                <p>Analyzes course registration data with distributed databases, integrating multiple sources to generate insights on course enrollments and curricular relationships.</p>
+                <p>Analyzed course registration data using distributed databases and multiple data sources to generate actionable insights.</p>
                 <div class="technologies-heading">Technologies Used:</div>
                 <div class="technologies">
                     <img src="pyspark.png" alt="PySpark">
@@ -186,10 +213,10 @@
                 <a href="https://github.com/madhusaravanan27/Data-Analysis-for-Ischool" target="_blank">View Project on GitHub</a>
             </div>
 
-            <!-- Project Card 3: VBAY Database Data Warehouse Project -->
+            <!-- Project 5: VBAY Database Data Warehouse Project -->
             <div class="project-card">
                 <h3>VBAY Database Data Warehouse Project</h3>
-                <p>Built a data warehouse for VBAY, enabling efficient reporting and analysis for sales, ratings, and bidding processes across various locations.</p>
+                <p>Developed a data warehouse for VBAY, enabling efficient reporting and analysis for sales, ratings, and bidding processes.</p>
                 <div class="technologies-heading">Technologies Used:</div>
                 <div class="technologies">
                     <img src="dbt.png" alt="DBT">
@@ -199,18 +226,15 @@
                 <a href="https://github.com/madhusaravanan27/VBAYETL" target="_blank">View Project on GitHub</a>
             </div>
 
-            <!-- Project Card 4: Real Time Sports Analytic Platform -->
+            <!-- Project 6: Real-Time Sports Analytics Platform -->
             <div class="project-card">
-                <h3>Real Time Sports Analytic Platform</h3>
-                <p>Developed a real-time analytics platform for live lacrosse game streams, tracking player and team stats and generating live box scores for web integration.</p>
+                <h3>Real-Time Sports Analytics Platform</h3>
+                <p>Developed a real-time analytics platform for live lacrosse game streams, tracking player and team stats and generating live box scores.</p>
                 <div class="technologies-heading">Technologies Used:</div>
                 <div class="technologies">
                     <img src="pyspark.png" alt="PySpark">
-                    <img src="docker.png" alt="Docker">
                     <img src="mongo.png" alt="MongoDB">
                     <img src="MSSQL.png" alt="MSSQL">
-                    <img src="minio.png" alt="Minio">
-                    <img src="drill.png" alt="Apache Drill">
                 </div>
                 <a href="https://github.com/madhusaravanan27/Real-Time-Sports-Analytics-Platform" target="_blank">View Project on GitHub</a>
             </div>

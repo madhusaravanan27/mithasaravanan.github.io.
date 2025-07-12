@@ -3,93 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Madhumitha Saravanan | Data Enthusiast</title>
+  <title>Madhumitha Saravanan | Data Engineer</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background-color: #0a192f;
       color: #ccd6f6;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      overflow-x: hidden;
     }
-
-    .hero {
-      text-align: center;
-      max-width: 800px;
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
       padding: 40px 20px;
     }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      color: #64ffda;
-    }
-
-    .hero h1 .highlight {
-      color: #64ffda;
-    }
-
-    .hero h2 {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-      color: #ffffff;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #8892b0;
-      margin-bottom: 2rem;
-    }
-
-    .buttons {
+    header {
       display: flex;
-      justify-content: center;
-      gap: 20px;
       flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
     }
-
-    .btn {
+    header img {
+      width: 250px;
+      border-radius: 12px;
+      border: 3px solid #64ffda;
+    }
+    .intro h1 {
+      font-size: 2.5rem;
+      color: #64ffda;
+    }
+    .intro p {
+      color: #8892b0;
+      font-size: 1.1rem;
+    }
+    h2 {
+      color: #64ffda;
+      border-bottom: 1px solid #233554;
+      padding-bottom: 10px;
+      margin-top: 60px;
+      font-size: 1.8rem;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .cta {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .cta a {
       background-color: #64ffda;
       color: #0a192f;
-      text-decoration: none;
       padding: 12px 24px;
-      border-radius: 8px;
+      border-radius: 6px;
+      text-decoration: none;
       font-weight: bold;
-      transition: background-color 0.3s;
     }
-
-    .btn:hover {
+    .cta a:hover {
       background-color: #52e0c4;
-    }
-
-    /* Remove accidental floating name if it existed before */
-    .name-tag {
-      display: none;
     }
   </style>
 </head>
 <body>
-  <section class="hero">
-    <h1>Hi, I'm <span class="highlight">Madhumitha</span></h1>
-    <h2>Data Engineer | Analyst | BI Developer</h2>
-    <p>
-      I bring a unique blend of backend development, scalable data engineering, and
-      business intelligence to every team I join. Whether it's designing pipelines,
-      optimizing cloud solutions, or interpreting analytics to guide business strategy,
-      I love turning data into decisions. Outside of work, you'll find me cooking
-      global cuisines or performing Bharatanatyam — both fuel my creativity!
-    </p>
-    <div class="buttons">
-      <a href="portfolio.html" class="btn">Explore Portfolio</a>
+  <div class="container">
+    <header>
+      <img src="your-photo.jpg" alt="Madhumitha Saravanan" />
+      <div class="intro">
+        <h1>Madhumitha Saravanan</h1>
+        <p>Data Engineer | BI Developer | Cloud Enthusiast</p>
+        <p>I specialize in building scalable data pipelines and analytical platforms across cloud environments. Passionate about transforming raw data into business-ready solutions.</p>
+      </div>
+    </header>
+
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Research Data Analyst, Syracuse University</strong> (Feb 2025 – Present)</li>
+      <li><strong>Data Analyst Researcher, Nexis @ Syracuse University</strong> (Feb 2023 – Dec 2024)</li>
+      <li><strong>Data Engineer, Infosys Ltd</strong> (Apr 2021 – Dec 2022)</li>
+    </ul>
+
+    <h2>Tech Snapshot</h2>
+    <p><strong>Languages:</strong> Python, SQL, Java | <strong>Cloud:</strong> AWS, Azure, GCP | <strong>Tools:</strong> Spark, Airflow, DBT, Snowflake</p>
+
+    <div class="cta">
+      <a href="portfolio.html">View Full Portfolio →</a>
     </div>
-  </section>
+  </div>
 </body>
 </html>

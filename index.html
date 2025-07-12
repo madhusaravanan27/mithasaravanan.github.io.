@@ -9,7 +9,7 @@
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #0a192f;
-      color: #FFD700;
+      color: #fffff0;
     }
     header {
       text-align: center;
@@ -19,40 +19,53 @@
       font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: 5px;
+      color: #fffff0;
     }
-    .subtitle {
+    header p {
       font-size: 1rem;
-      font-weight: 500;
+      margin: 5px 0;
+      color: #ffd700;
     }
     nav a {
       display: inline-block;
       margin-top: 10px;
-      text-decoration: none;
-      color: #FFD700;
-      font-weight: 600;
+      color: #ffd700;
+      text-decoration: underline;
+      font-weight: 500;
+      font-size: 0.9rem;
     }
     .hero {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      padding: 20px 0;
-      background-color: #0a192f;
+      padding: 20px;
     }
     .hero img {
-      width: 90%;
-      max-width: 500px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+    }
+    .hero-text {
+      margin-top: 20px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+      background: rgba(10, 25, 47, 0.7);
+      padding: 10px 15px;
+      border-radius: 8px;
+      color: #fffff0;
     }
     .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 30px 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
     h2 {
-      border-bottom: 2px solid #FFD700;
-      padding-bottom: 10px;
-      font-size: 1.5rem;
+      border-bottom: 2px solid #ffd700;
+      padding-bottom: 5px;
+      font-size: 1.4rem;
+      color: #ffd700;
     }
     ul {
       padding-left: 20px;
@@ -65,36 +78,36 @@
       text-align: center;
     }
     .cta a {
-      background-color: #FFD700;
+      background-color: #ffd700;
       color: #0a192f;
-      padding: 10px 20px;
-      border-radius: 5px;
+      padding: 12px 20px;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      transition: background-color 0.3s ease;
+      display: inline-block;
     }
     .cta a:hover {
-      background-color: #e6c200;
+      background-color: #e0b400;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>MADHUMITHA SARAVANAN</h1>
-    <div class="subtitle">Data Engineer | Data Analyst | Business Intelligence Engineer</div>
+    <p>Data Engineer | Data Analyst | Business Intelligence Engineer</p>
     <nav><a href="#">Back to Homepage</a></nav>
   </header>
 
   <section class="hero">
-    <img src="https://raw.githubusercontent.com/mithasaravanan/mithasaravanan.github.io/main/myimage.jpg" alt="Madhumitha Saravanan">
+    <img src="myimage.jpg" alt="Madhumitha Saravanan">
+    <div class="hero-text">DATA ENGINEER. ANALYST. BUSINESS INTELLIGENCE ENGINEER.</div>
   </section>
 
   <div class="container">
     <h2>Experience</h2>
     <ul>
-      <li><strong>Research Data Analyst, Syracuse University</strong> (Feb 2025 – Present)</li>
-      <li><strong>Data Analyst Researcher, Nexis @ Syracuse University</strong> (Feb 2023 – Dec 2024)</li>
+      <li><strong>Business Intelligence Engineer, Syracuse University</strong> (Feb 2025 – Present)</li>
+      <li><strong>Data Science Researcher, Nexis @ Syracuse University</strong> (Feb 2023 – Dec 2024)</li>
       <li><strong>Data Engineer, Infosys Ltd</strong> (Apr 2021 – Dec 2022)</li>
     </ul>
 
@@ -102,6 +115,5 @@
       <a href="portfolio.html">View Full Portfolio →</a>
     </div>
   </div>
-
 </body>
 </html>

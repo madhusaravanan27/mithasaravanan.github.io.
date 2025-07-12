@@ -1,181 +1,112 @@
+from IPython.display import display, HTML
+
+html_code = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Madhumitha Saravanan | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madhumitha Saravanan | Data Enthusiast</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #212529;
             margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            overflow-x: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a192f;
+            color: #ccd6f6;
         }
-        nav {
+        .hero {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
             width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            padding: 20px;
-            background-color: #343a40;
         }
-        nav a {
-            color: #17a2b8;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #ffffff;
-        }
-        .main-section {
+        .hero-left, .hero-right {
+            flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
-            max-width: 1200px;
-            margin: auto;
-            padding: 40px 20px 20px;
+        }
+        .hero-left {
+            background-color: #1f2937;
+        }
+        .hero-left img {
+            width: 80%;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        .hero-right {
             flex-direction: column;
-            text-align: center;
+            padding: 40px;
+            text-align: left;
+            background-color: #0a192f;
         }
-        .profile-image {
-            width: 130px;
-            height: auto;
-            border: 4px solid #17a2b8;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin-bottom: 20px;
-            border-radius: 50%;
+        .hero-right h1 {
+            font-size: 3em;
+            color: #64ffda;
+            margin: 0;
         }
-        .content h1 {
-            color: #17a2b8;
+        .hero-right h2 {
             font-size: 2em;
-            font-weight: normal;
-            margin: 0;
+            color: #ffffff;
+            margin-top: 10px;
         }
-        .content h2 {
-            color: #343a40;
-            font-size: 2.2em;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-        .content p {
-            color: #495057;
-            font-size: 1em;
+        .hero-right p {
+            margin: 20px 0;
+            max-width: 500px;
             line-height: 1.6;
-            padding: 0 10px;
+            color: #8892b0;
         }
-        .skills {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .skills span {
-            display: inline-block;
-            background-color: #17a2b8;
-            color: white;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 15px;
-            font-size: 0.9em;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #17a2b8;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .button:hover {
-            background-color: #138496;
-        }
-        .horizontal-bar {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #343a40;
-            padding: 10px 0;
+        .buttons {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            gap: 20px;
         }
-        .horizontal-bar span {
+        .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #64ffda;
+            color: #0a192f;
             font-weight: bold;
-            color: #17a2b8;
-            font-size: 1.1em;
+            border-radius: 5px;
+            transition: all 0.3s ease;
         }
-        .horizontal-bar a img {
-            width: 25px;
-            height: 25px;
-        }
-        .horizontal-bar a:hover {
-            transform: scale(1.1);
+        .buttons a:hover {
+            background-color: transparent;
+            border: 2px solid #64ffda;
+            color: #64ffda;
         }
         @media (max-width: 768px) {
-            .main-section {
-                padding: 10px;
+            .hero {
+                flex-direction: column;
+                height: auto;
             }
-            .profile-image {
-                width: 100px;
+            .hero-left, .hero-right {
+                flex: unset;
+                width: 100%;
+                padding: 20px;
             }
-            .content h2 {
-                font-size: 1.8em;
-            }
-            .content p {
-                font-size: 0.9em;
+            .hero-left img {
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="Overview.html">Overview</a>
-        <a href="blog.html">Blog</a>
-        <a href="work.html">Experience</a>
-        <a href="project.html">Projects</a>
-        <a href="https://github.com/madhusaravanan27/mithasaravanan.github.io/raw/main/MS-General.pdf" download="MS-General.pdf">Resume</a>
-    </nav>
-
-    <div class="main-section">
-        <img src="profile.jpg" alt="Madhumitha Saravanan" class="profile-image">
-        <div class="content">
-            <h1>Hello, I'm</h1>
-            <h2>Madhumitha Saravanan</h2>
-            <p>
-                A passionate Data Engineer and Analyst with a unique blend of backend development, business intelligence, and cloud engineering skills. I specialize in building robust data pipelines and scalable solutions using tools like Python, SQL, Spark, and cloud platforms such as AWS, Azure, and GCP. I love solving real-world problems with data and bringing clarity to complex systems.
-            </p>
-            <p>
-                Outside of data, I enjoy classical Bharatanatyam dance, exploring global cuisines, and baking desserts. Whether I’m debugging code or trying a new recipe, I love getting creative and learning something new.
-            </p>
-            <div class="skills">
-                <span>Python</span><span>SQL</span><span>Spark</span><span>DBT</span><span>Airflow</span>
-                <span>AWS</span><span>Azure</span><span>GCP</span><span>Snowflake</span><span>Power BI</span>
-                <span>Plotly</span><span>Seaborn</span><span>Matplotlib</span><span>Statsmodels</span>
-            </div>
-            <a href="project.html" class="button">View My Projects</a>
+    <div class="hero">
+        <div class="hero-left">
+            <img src="profile.jpg" alt="Madhumitha Saravanan">
         </div>
-    </div>
-
-    <div class="horizontal-bar">
-        <span>Connect with Me:</span>
-        <a href="https://www.linkedin.com/in/mithasaravanan7/" target="_blank">
-            <img src="linkedin.png" alt="LinkedIn Icon">
-        </a>
-        <a href="https://github.com/madhusaravanan27" target="_blank">
-            <img src="Github.png" alt="GitHub Icon">
-        </a>
-        <a href="mailto:msaravan@syr.edu" target="_blank">
-            <img src="mail.png" alt="Mail Icon">
-        </a>
+        <div class="hero-right">
+            <h1>Hi, I'm Madhumitha</h1>
+            <h2>Data Engineer | Analyst | BI Developer</h2>
+            <p>I bring a unique blend of backend development, scalable data engineering, and business intelligence to every team I join. Whether it's designing pipelines, optimizing cloud solutions, or interpreting analytics to guide business strategy, I love turning data into decisions. Outside of work, you’ll find me cooking global cuisines or performing Bharatanatyam — both fuel my creativity!</p>
+            <div class="buttons">
+                <a href="project.html">Explore Portfolio</a>
+                <a href="https://github.com/madhusaravanan27/mithasaravanan.github.io/raw/main/MS-General.pdf" download>Download Resume</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
+"""
+
+display(HTML(html_code))

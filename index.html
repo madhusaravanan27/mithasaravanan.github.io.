@@ -7,8 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #0a192f;
-            color: #ccd6f6;
+            background-color: #f8f9fa;
+            color: #212529;
             margin: 0;
             padding: 0;
             display: flex;
@@ -22,10 +22,10 @@
             display: flex;
             justify-content: flex-end;
             padding: 20px;
-            background-color: #0a192f;
+            background-color: #343a40;
         }
         nav a {
-            color: #64ffda;
+            color: #17a2b8;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
@@ -37,81 +37,83 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 80vh;
             max-width: 1200px;
             margin: auto;
-            padding: 20px;
+            padding: 40px 20px 20px;
             flex-direction: column;
+            text-align: center;
         }
         .profile-image {
-            width: 120px;
+            width: 130px;
             height: auto;
-            border: 4px solid #64ffda;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border: 4px solid #17a2b8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             margin-bottom: 20px;
             border-radius: 50%;
         }
-        .content {
-            max-width: 600px;
-            text-align: center;
-        }
         .content h1 {
-            color: #64ffda;
-            font-size: 1.8em;
+            color: #17a2b8;
+            font-size: 2em;
             font-weight: normal;
             margin: 0;
         }
         .content h2 {
-            color: #ffffff;
-            font-size: 2em;
+            color: #343a40;
+            font-size: 2.2em;
             font-weight: bold;
             margin: 10px 0;
         }
         .content p {
-            color: #8892b0;
+            color: #495057;
             font-size: 1em;
             line-height: 1.6;
             padding: 0 10px;
         }
-        .content .button {
+        .skills {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .skills span {
             display: inline-block;
-            margin-top: 15px;
-            padding: 8px 16px;
-            background-color: #64ffda;
-            color: #0a192f;
+            background-color: #17a2b8;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #17a2b8;
+            color: #fff;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            transition: all 0.3s ease;
+            transition: background-color 0.3s ease;
         }
-        .content .button:hover {
-            background-color: #0a192f;
-            color: #64ffda;
-            border: 2px solid #64ffda;
+        .button:hover {
+            background-color: #138496;
         }
         .horizontal-bar {
             position: fixed;
             bottom: 0;
             width: 100%;
-            background-color: #112240;
+            background-color: #343a40;
             padding: 10px 0;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 15px;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
         }
         .horizontal-bar span {
             font-weight: bold;
-            color: #64ffda;
+            color: #17a2b8;
             font-size: 1.1em;
         }
-        .horizontal-bar a {
-            color: #ccd6f6;
-            text-decoration: none;
-            transition: transform 0.3s;
-        }
-        .horizontal-bar img {
+        .horizontal-bar a img {
             width: 25px;
             height: 25px;
         }
@@ -124,7 +126,6 @@
             }
             .profile-image {
                 width: 100px;
-                height: auto;
             }
             .content h2 {
                 font-size: 1.8em;
@@ -136,8 +137,6 @@
     </style>
 </head>
 <body>
-
-    <!-- Navigation Bar -->
     <nav>
         <a href="Overview.html">Overview</a>
         <a href="blog.html">Blog</a>
@@ -146,19 +145,26 @@
         <a href="https://github.com/madhusaravanan27/mithasaravanan.github.io/raw/main/MS-General.pdf" download="MS-General.pdf">Resume</a>
     </nav>
 
-    <!-- Main Content Section -->
     <div class="main-section">
         <img src="profile.jpg" alt="Madhumitha Saravanan" class="profile-image">
         <div class="content">
-            <h1>Hi, I'm</h1>
-            <h2>Madhumitha Saravanan.</h2>
+            <h1>Hello, I'm</h1>
+            <h2>Madhumitha Saravanan</h2>
             <p>
-                I’m a results-oriented data professional with over 3 years of experience, uniquely positioned at the intersection of Data Engineering, Business Intelligence, and Analytics. I bring a versatile blend of backend development, cloud-native architecture, and scalable data pipeline design across platforms like AWS, Azure, and GCP. My expertise lies in transforming complex data into actionable insights, enabling smarter business strategies and efficient system performance. Passionate about delivering impact, I thrive in dynamic, cross-functional environments where data drives decision-making and innovation.
+                A passionate Data Engineer and Analyst with a unique blend of backend development, business intelligence, and cloud engineering skills. I specialize in building robust data pipelines and scalable solutions using tools like Python, SQL, Spark, and cloud platforms such as AWS, Azure, and GCP. I love solving real-world problems with data and bringing clarity to complex systems.
             </p>
+            <p>
+                Outside of data, I enjoy classical Bharatanatyam dance, exploring global cuisines, and baking desserts. Whether I’m debugging code or trying a new recipe, I love getting creative and learning something new.
+            </p>
+            <div class="skills">
+                <span>Python</span><span>SQL</span><span>Spark</span><span>DBT</span><span>Airflow</span>
+                <span>AWS</span><span>Azure</span><span>GCP</span><span>Snowflake</span><span>Power BI</span>
+                <span>Plotly</span><span>Seaborn</span><span>Matplotlib</span><span>Statsmodels</span>
+            </div>
+            <a href="project.html" class="button">View My Projects</a>
         </div>
     </div>
 
-    <!-- Horizontal Connect with Me Bar -->
     <div class="horizontal-bar">
         <span>Connect with Me:</span>
         <a href="https://www.linkedin.com/in/mithasaravanan7/" target="_blank">
@@ -171,6 +177,5 @@
             <img src="mail.png" alt="Mail Icon">
         </a>
     </div>
-
 </body>
 </html>

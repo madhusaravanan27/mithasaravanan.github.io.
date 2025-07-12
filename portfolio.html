@@ -10,7 +10,33 @@
       color: #ccd6f6;
       font-family: Arial, sans-serif;
       margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #0a192f;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #112240;
+    }
+
+    nav a {
+      color: #64ffda;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
       padding: 40px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
     }
 
     h2 {
@@ -21,17 +47,37 @@
       margin-top: 40px;
     }
 
-    a.section-link {
-      display: inline-block;
-      margin: 10px 15px 0 0;
-      color: #64ffda;
-      text-decoration: none;
-      font-weight: bold;
+    .cert-list {
+      margin-top: 20px;
+    }
+
+    .cert-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #112240;
+      border-left: 4px solid #64ffda;
+      border-radius: 8px;
+    }
+
+    .cert-item img {
+      height: 40px;
+      width: 40px;
+      object-fit: contain;
+    }
+
+    .cert-text h3 {
+      margin: 0 0 5px;
+      color: #ffffff;
       font-size: 1.1rem;
     }
 
-    a.section-link:hover {
-      text-decoration: underline;
+    .cert-text p {
+      margin: 0;
+      color: #8892b0;
+      font-size: 0.95rem;
     }
 
     .tech-grid {
@@ -80,75 +126,168 @@
       color: #8892b0;
       margin: 5px 0 0 0;
     }
+
+    .back-home {
+      display: block;
+      text-align: center;
+      margin: 60px 0 30px;
+    }
+
+    .back-home a {
+      background-color: #64ffda;
+      color: #0a192f;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .back-home a:hover {
+      background-color: #52e0c4;
+    }
   </style>
 </head>
 <body>
 
-  <h2>Explore My Portfolio</h2>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="portfolio.html">📁 Portfolio</a>
+    <a href="projects.html">💡 Projects</a>
+  </nav>
 
-  <a href="certifications.html" class="section-link">📜 Certifications</a>
-  <a href="project.html" class="section-link">💡 Projects</a>
-  <a href="work.html" class="section-link">💼 Experience</a>
-
-  <h2>Tech Stack</h2>
-
-  <div class="tech-grid">
-
-    <div class="tech-column">
-      <h3>🖥 Programming</h3>
-      <div class="skills-list">
-        <div class="skill">Python</div>
-        <div class="skill">SQL</div>
-        <div class="skill">Java</div>
-        <div class="skill">R</div>
+  <main>
+    <!-- Certifications -->
+    <h2>Certifications</h2>
+    <div class="cert-list">
+      <div class="cert-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo" />
+        <div class="cert-text">
+          <h3>IBM: ETL and Data Pipelines with Shell, Airflow and Kafka</h3>
+          <p>Shell scripting, Apache Airflow, and Kafka for building and scheduling data workflows.</p>
+        </div>
       </div>
 
-      <h3>📊 Big Data & Tools</h3>
-      <div class="skills-list">
-        <div class="skill">Apache Spark</div>
-        <div class="skill">Kafka</div>
-        <div class="skill">DBT</div>
-        <div class="skill">Apache Drill</div>
-        <div class="skill">Hadoop</div>
-        <div class="skill">Git</div>
+      <div class="cert-item">
+        <img src="https://cdn.worldvectorlogo.com/logos/databricks.svg" alt="Databricks Logo" />
+        <div class="cert-text">
+          <h3>Databricks: Lakehouse Fundamentals</h3>
+          <p>Hands-on knowledge in Delta Lake, Unity Catalog, DBFS for unified analytics.</p>
+        </div>
+      </div>
+
+      <div class="cert-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" />
+        <div class="cert-text">
+          <h3>Google: Foundations of Business Intelligence</h3>
+          <p>BI tools, data models, and translating business needs into technical strategy.</p>
+        </div>
+      </div>
+
+      <div class="cert-item">
+        <img src="https://cdn.worldvectorlogo.com/logos/snowflake-1.svg" alt="Snowflake Logo" />
+        <div class="cert-text">
+          <h3>Snowflake: Hands-on Essentials – Data Warehouse</h3>
+          <p>Built data pipelines and executed analytical queries using Snowflake SQL.</p>
+        </div>
+      </div>
+
+      <div class="cert-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo" />
+        <div class="cert-text">
+          <h3>Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
+          <p>Core Azure services, cloud concepts, and pricing/tiering models.</p>
+        </div>
+      </div>
+
+      <div class="cert-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo" />
+        <div class="cert-text">
+          <h3>Microsoft Certified: Azure Data Fundamentals</h3>
+          <p>Relational, non-relational, and real-time data workloads using Azure storage tools.</p>
+        </div>
+      </div>
+
+      <div class="cert-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo" />
+        <div class="cert-text">
+          <h3>Microsoft Certified: Azure Data Scientist Associate</h3>
+          <p>Model training, evaluation, and deployment with Azure ML and pipelines.</p>
+        </div>
+      </div>
+
+      <div class="cert-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo" />
+        <div class="cert-text">
+          <h3>Microsoft Certified: Azure Data Engineer Associate</h3>
+          <p>End-to-end data workflows using Azure Data Factory, Synapse, and Databricks.</p>
+        </div>
       </div>
     </div>
 
-    <div class="tech-column">
-      <h3>☁️ Cloud & DevOps</h3>
-      <div class="skills-list">
-        <div class="skill">AWS</div>
-        <div class="skill">Azure</div>
-        <div class="skill">GCP</div>
-        <div class="skill">Kubernetes</div>
-        <div class="skill">Jenkins</div>
-        <div class="skill">Apache Airflow</div>
-        <div class="skill">Terraform</div>
-        <div class="skill">Snowflake</div>
+    <!-- Tech Stack -->
+    <h2>Tech Stack</h2>
+    <div class="tech-grid">
+      <div class="tech-column">
+        <h3>🖥 Programming</h3>
+        <div class="skills-list">
+          <div class="skill">Python</div>
+          <div class="skill">SQL</div>
+          <div class="skill">Java</div>
+          <div class="skill">R</div>
+        </div>
+
+        <h3>📊 Big Data & Tools</h3>
+        <div class="skills-list">
+          <div class="skill">Apache Spark</div>
+          <div class="skill">Kafka</div>
+          <div class="skill">DBT</div>
+          <div class="skill">Apache Drill</div>
+          <div class="skill">Hadoop</div>
+          <div class="skill">Git</div>
+        </div>
       </div>
 
-      <h3>🛢 Databases</h3>
-      <div class="skills-list">
-        <div class="skill">MSSQL</div>
-        <div class="skill">MySQL</div>
-        <div class="skill">PostgreSQL</div>
-        <div class="skill">MongoDB</div>
-        <div class="skill">Elasticsearch</div>
-        <div class="skill">Neo4j</div>
-        <div class="skill">Cassandra</div>
+      <div class="tech-column">
+        <h3>☁️ Cloud & DevOps</h3>
+        <div class="skills-list">
+          <div class="skill">AWS</div>
+          <div class="skill">Azure</div>
+          <div class="skill">GCP</div>
+          <div class="skill">Kubernetes</div>
+          <div class="skill">Jenkins</div>
+          <div class="skill">Apache Airflow</div>
+          <div class="skill">Terraform</div>
+          <div class="skill">Snowflake</div>
+        </div>
+
+        <h3>🛢 Databases</h3>
+        <div class="skills-list">
+          <div class="skill">MSSQL</div>
+          <div class="skill">MySQL</div>
+          <div class="skill">PostgreSQL</div>
+          <div class="skill">MongoDB</div>
+          <div class="skill">Elasticsearch</div>
+          <div class="skill">Neo4j</div>
+          <div class="skill">Cassandra</div>
+        </div>
       </div>
     </div>
 
-  </div>
+    <!-- Publication -->
+    <h2>Publication</h2>
+    <div class="publication">
+      <a href="https://github.com/madhusaravanan27/Research-Publications" target="_blank">
+        📖 Segmentation and Detection of White Matter Damage from Cranial Ultrasound using Hybrid Neural Networks
+      </a>
+      <p>Developed a hybrid deep learning framework to identify white matter damage in neonatal ultrasound scans.</p>
+    </div>
 
-  <h2>Publication</h2>
+    <!-- Back Button -->
+    <div class="back-home">
+      <a href="index.html">← Back to Homepage</a>
+    </div>
 
-  <div class="publication">
-    <a href="https://github.com/madhusaravanan27/Research-Publications" target="_blank">
-      📖 Segmentation and Detection of White Matter Damage from Cranial Ultrasound using Hybrid Neural Networks
-    </a>
-    <p>Developed a hybrid deep learning framework to identify white matter damage in neonatal ultrasound scans.</p>
-  </div>
-
+  </main>
 </body>
 </html>

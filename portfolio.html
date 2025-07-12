@@ -47,37 +47,15 @@
       margin-top: 40px;
     }
 
-    .cert-list {
-      margin-top: 20px;
-    }
-
-    .cert-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 15px;
-      margin-bottom: 20px;
-      padding: 15px;
-      background-color: #112240;
-      border-left: 4px solid #64ffda;
-      border-radius: 8px;
-    }
-
-    .cert-item img {
-      height: 40px;
-      width: 40px;
-      object-fit: contain;
-    }
-
-    .cert-text h3 {
-      margin: 0 0 5px;
-      color: #ffffff;
+    a.section-link {
+      color: #64ffda;
+      font-weight: bold;
       font-size: 1.1rem;
+      text-decoration: none;
     }
 
-    .cert-text p {
-      margin: 0;
-      color: #8892b0;
-      font-size: 0.95rem;
+    a.section-link:hover {
+      text-decoration: underline;
     }
 
     .tech-grid {
@@ -106,6 +84,28 @@
       border-radius: 5px;
       font-size: 0.95rem;
       white-space: nowrap;
+    }
+
+    .cert-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .cert-column {
+      flex: 1 1 45%;
+      min-width: 280px;
+    }
+
+    .cert-column ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .cert-column li {
+      margin-bottom: 10px;
+      color: #ccd6f6;
     }
 
     .publication {
@@ -152,77 +152,15 @@
   <!-- Navigation -->
   <nav>
     <a href="index.html">🏠 Home</a>
-    <a href="project.html">💡 Projects</a>
+    <a href="portfolio.html">📁 Portfolio</a>
+    <a href="projects.html">💡 Projects</a>
   </nav>
 
   <main>
-    <!-- Certifications -->
-    <h2>Certifications</h2>
-    <div class="cert-list">
-      <div class="cert-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo" />
-        <div class="cert-text">
-          <h3>IBM: ETL and Data Pipelines with Shell, Airflow and Kafka</h3>
-          <p>Shell scripting, Apache Airflow, and Kafka for building and scheduling data workflows.</p>
-        </div>
-      </div>
 
-      <div class="cert-item">
-        <img src="https://cdn.worldvectorlogo.com/logos/databricks.svg" alt="Databricks Logo" />
-        <div class="cert-text">
-          <h3>Databricks: Lakehouse Fundamentals</h3>
-          <p>Hands-on knowledge in Delta Lake, Unity Catalog, DBFS for unified analytics.</p>
-        </div>
-      </div>
-
-      <div class="cert-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" />
-        <div class="cert-text">
-          <h3>Google: Foundations of Business Intelligence</h3>
-          <p>BI tools, data models, and translating business needs into technical strategy.</p>
-        </div>
-      </div>
-
-      <div class="cert-item">
-        <img src="https://cdn.worldvectorlogo.com/logos/snowflake-1.svg" alt="Snowflake Logo" />
-        <div class="cert-text">
-          <h3>Snowflake: Hands-on Essentials – Data Warehouse</h3>
-          <p>Built data pipelines and executed analytical queries using Snowflake SQL.</p>
-        </div>
-      </div>
-
-      <div class="cert-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo" />
-        <div class="cert-text">
-          <h3>Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
-          <p>Core Azure services, cloud concepts, and pricing/tiering models.</p>
-        </div>
-      </div>
-
-      <div class="cert-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo" />
-        <div class="cert-text">
-          <h3>Microsoft Certified: Azure Data Fundamentals</h3>
-          <p>Relational, non-relational, and real-time data workloads using Azure storage tools.</p>
-        </div>
-      </div>
-
-      <div class="cert-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo" />
-        <div class="cert-text">
-          <h3>Microsoft Certified: Azure Data Scientist Associate</h3>
-          <p>Model training, evaluation, and deployment with Azure ML and pipelines.</p>
-        </div>
-      </div>
-
-      <div class="cert-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo" />
-        <div class="cert-text">
-          <h3>Microsoft Certified: Azure Data Engineer Associate</h3>
-          <p>End-to-end data workflows using Azure Data Factory, Synapse, and Databricks.</p>
-        </div>
-      </div>
-    </div>
+    <!-- Projects Link -->
+    <h2>Projects</h2>
+    <p><a href="projects.html" class="section-link">🔗 View My Projects</a></p>
 
     <!-- Tech Stack -->
     <h2>Tech Stack</h2>
@@ -273,8 +211,29 @@
       </div>
     </div>
 
+    <!-- Certifications -->
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-column">
+        <ul>
+          <li>IBM: ETL and Data Pipelines</li>
+          <li>Databricks: Lakehouse Fundamentals</li>
+          <li>Google: Foundations of BI</li>
+          <li>Snowflake: Hands-on Essentials</li>
+        </ul>
+      </div>
+      <div class="cert-column">
+        <ul>
+          <li>Azure Fundamentals (AZ-900)</li>
+          <li>Azure Data Fundamentals</li>
+          <li>Azure Data Scientist Associate</li>
+          <li>Azure Data Engineer Associate</li>
+        </ul>
+      </div>
+    </div>
+
     <!-- Publication -->
-    <h2>Publications</h2>
+    <h2>Publication</h2>
     <div class="publication">
       <a href="https://github.com/madhusaravanan27/Research-Publications" target="_blank">
         📖 Segmentation and Detection of White Matter Damage from Cranial Ultrasound using Hybrid Neural Networks

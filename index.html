@@ -8,84 +8,105 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0a192f;
-      color: #ffd700;
+      background-color: #0a192f; /* deep navy */
+      color: #ffd700; /* golden yellow */
     }
+
     header {
       text-align: center;
-      padding: 30px 20px 10px;
+      padding: 40px 20px 0;
     }
+
     header h1 {
       font-size: 2.5rem;
-      margin: 0;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #ffd700;
     }
-    header h2 {
+
+    .subtitle {
       font-size: 1.1rem;
-      font-weight: normal;
-      margin-top: 10px;
       color: #f0e68c;
+      font-weight: 500;
     }
+
     nav {
-      margin-top: 15px;
+      margin-top: 10px;
     }
+
     nav a {
+      margin: 0 10px;
       text-decoration: none;
       color: #ffd700;
       font-weight: 500;
-      font-size: 1rem;
     }
-    .hero {
-      width: 100%;
-      max-height: 500px;
-      overflow: hidden;
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0 20px;
     }
-    .hero img {
-      width: 100%;
+
+    .profile-image {
+      max-width: 90%;
+      width: 420px;
       height: auto;
-      display: block;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
     }
+
     .container {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 20px;
     }
+
     h2 {
-      color: #ffd700;
+      font-size: 1.6rem;
       border-bottom: 2px solid #ffd700;
       padding-bottom: 10px;
       margin-top: 40px;
-      font-size: 1.6rem;
     }
+
     ul {
       padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
       line-height: 1.6;
     }
+
+    strong {
+      color: #f7c948;
+    }
+
     .cta {
-      margin-top: 40px;
+      margin-top: 30px;
       text-align: center;
     }
+
     .cta a {
       background-color: #ffd700;
       color: #0a192f;
-      padding: 12px 24px;
+      padding: 12px 20px;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
     }
+
     .cta a:hover {
-      background-color: #f7d000;
+      background-color: #f0e68c;
     }
 
-    /* Mobile adjustments */
     @media (max-width: 768px) {
       header h1 {
         font-size: 2rem;
       }
-      header h2 {
+
+      .subtitle {
         font-size: 1rem;
-      }
-      h2 {
-        font-size: 1.3rem;
       }
     }
   </style>
@@ -93,15 +114,15 @@
 <body>
   <header>
     <h1>MADHUMITHA SARAVANAN</h1>
-    <h2>Data Engineer | Data Analyst | Business Intelligence Engineer</h2>
+    <div class="subtitle">Data Engineer | Data Analyst | Business Intelligence Engineer</div>
     <nav>
       <a href="#">Back to Homepage</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <img src="myimage.jpg" alt="Madhumitha Saravanan">
-  </section>
+  <div class="image-container">
+    <img class="profile-image" src="https://raw.githubusercontent.com/mithasaravanan/mithasaravanan.github.io/main/myimage.jpg" alt="Madhumitha Saravanan">
+  </div>
 
   <div class="container">
     <h2>Experience</h2>

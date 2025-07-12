@@ -18,11 +18,12 @@
       font-size: 2rem;
       border-bottom: 1px solid #233554;
       padding-bottom: 10px;
+      margin-top: 40px;
     }
 
     a.section-link {
       display: inline-block;
-      margin: 10px 15px 20px 0;
+      margin: 10px 15px 0 0;
       color: #64ffda;
       text-decoration: none;
       font-weight: bold;
@@ -33,20 +34,24 @@
       text-decoration: underline;
     }
 
-    .tech-category {
-      margin-bottom: 20px;
+    .tech-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+      margin-top: 20px;
     }
 
-    .tech-category h3 {
-      margin: 20px 0 10px;
-      color: #ffffff;
-      font-size: 1.2rem;
+    .tech-column {
+      flex: 1 1 45%;
+      min-width: 280px;
     }
 
     .skills-list {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      margin-bottom: 20px;
     }
 
     .skill {
@@ -54,6 +59,7 @@
       padding: 8px 16px;
       border-radius: 5px;
       font-size: 0.95rem;
+      white-space: nowrap;
     }
 
     .publication {
@@ -86,53 +92,53 @@
 
   <h2>Tech Stack</h2>
 
-  <div class="tech-category">
-    <h3>🖥 Programming</h3>
-    <div class="skills-list">
-      <div class="skill">Python</div>
-      <div class="skill">SQL</div>
-      <div class="skill">Java</div>
-      <div class="skill">R</div>
-    </div>
-  </div>
+  <div class="tech-grid">
 
-  <div class="tech-category">
-    <h3>📊 Big Data & Tools</h3>
-    <div class="skills-list">
-      <div class="skill">Apache Spark</div>
-      <div class="skill">Kafka</div>
-      <div class="skill">DBT</div>
-      <div class="skill">Apache Drill</div>
-      <div class="skill">Hadoop</div>
-      <div class="skill">Git</div>
-    </div>
-  </div>
+    <div class="tech-column">
+      <h3>🖥 Programming</h3>
+      <div class="skills-list">
+        <div class="skill">Python</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Java</div>
+        <div class="skill">R</div>
+      </div>
 
-  <div class="tech-category">
-    <h3>☁️ Cloud & DevOps</h3>
-    <div class="skills-list">
-      <div class="skill">AWS</div>
-      <div class="skill">Azure</div>
-      <div class="skill">GCP</div>
-      <div class="skill">Kubernetes</div>
-      <div class="skill">Jenkins</div>
-      <div class="skill">Apache Airflow</div>
-      <div class="skill">Terraform</div>
-      <div class="skill">Snowflake</div>
+      <h3>📊 Big Data & Tools</h3>
+      <div class="skills-list">
+        <div class="skill">Apache Spark</div>
+        <div class="skill">Kafka</div>
+        <div class="skill">DBT</div>
+        <div class="skill">Apache Drill</div>
+        <div class="skill">Hadoop</div>
+        <div class="skill">Git</div>
+      </div>
     </div>
-  </div>
 
-  <div class="tech-category">
-    <h3>🛢 Databases</h3>
-    <div class="skills-list">
-      <div class="skill">MSSQL</div>
-      <div class="skill">MySQL</div>
-      <div class="skill">PostgreSQL</div>
-      <div class="skill">MongoDB</div>
-      <div class="skill">Elasticsearch</div>
-      <div class="skill">Neo4j</div>
-      <div class="skill">Cassandra</div>
+    <div class="tech-column">
+      <h3>☁️ Cloud & DevOps</h3>
+      <div class="skills-list">
+        <div class="skill">AWS</div>
+        <div class="skill">Azure</div>
+        <div class="skill">GCP</div>
+        <div class="skill">Kubernetes</div>
+        <div class="skill">Jenkins</div>
+        <div class="skill">Apache Airflow</div>
+        <div class="skill">Terraform</div>
+        <div class="skill">Snowflake</div>
+      </div>
+
+      <h3>🛢 Databases</h3>
+      <div class="skills-list">
+        <div class="skill">MSSQL</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">PostgreSQL</div>
+        <div class="skill">MongoDB</div>
+        <div class="skill">Elasticsearch</div>
+        <div class="skill">Neo4j</div>
+        <div class="skill">Cassandra</div>
+      </div>
     </div>
+
   </div>
 
   <h2>Publication</h2>

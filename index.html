@@ -1,89 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Madhumitha Saravanan | Data Professional</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhumitha Saravanan | Portfolio</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0a192f;
-      color: #fffff0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+      background-color: #fff;
     }
     header {
       text-align: center;
-      padding: 60px 20px 20px;
     }
     header h1 {
-      font-size: 2.6rem;
-      font-weight: 700;
-      color: #ffd700;
+      margin: 0;
+      font-size: 2.2rem;
     }
     header p {
-      font-size: 1.1rem;
-      color: #fffff0;
-      margin-top: 10px;
+      font-style: italic;
+      color: #666;
     }
-    nav a {
-      display: inline-block;
-      margin-top: 20px;
-      color: #ffd700;
-      text-decoration: underline;
-      font-size: 0.95rem;
+    .section {
+      margin-top: 30px;
     }
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+    .section h2 {
+      border-bottom: 2px solid #64ffda;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
     }
-    h2 {
-      color: #ffd700;
-      font-size: 1.4rem;
-      border-bottom: 2px solid #ffd700;
-      padding-bottom: 6px;
-      margin-bottom: 20px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
     }
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
+    .project {
+      background: #f0f0f0;
+      padding: 15px;
+      border-left: 4px solid #64ffda;
     }
-    .cta {
+    .footer {
+      margin-top: 50px;
+      text-align: center;
+      font-style: italic;
+    }
+    .next-page-link {
       text-align: center;
       margin-top: 30px;
     }
-    .cta a {
-      background-color: #ffd700;
-      color: #0a192f;
-      padding: 12px 24px;
-      border-radius: 6px;
+    .next-page-link a {
       text-decoration: none;
-      font-weight: bold;
-    }
-    .cta a:hover {
-      background-color: #e0b400;
+      color: #fff;
+      background-color: #64ffda;
+      padding: 10px 20px;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Madhumitha Saravanan</h1>
-    <p>Data Engineer | Data Analyst | Business Intelligence Engineer</p>
-    <nav><a href="#">Back to Homepage</a></nav>
-  </header>
-
   <div class="container">
-    <h2>About Me</h2>
-    <p>
-      I’m a results-driven data professional with 3.5+ years of experience building scalable pipelines, transforming data into actionable insights, and supporting analytics workflows across cloud environments.
-      With hands-on skills in AWS, Azure, SQL, Python, and BI tools, I bring a blend of technical depth and business impact to everything I do.
-    </p>
+    <header>
+      <h1>Madhumitha Saravanan</h1>
+      <p>Backend Engineer | Data Engineer | Data Analyst | Business Intelligence Developer</p>
+      <p>Email: madhumithasaravanan27@gmail.com | Phone: 315-561-5150</p>
+      <p>GitHub: github.com/madhusaravanan27 | LinkedIn: linkedin.com/in/mithasaravanan7</p>
+    </header>
 
-    <div class="cta">
-      <a href="portfolio.html">View Full Portfolio →</a>
+    <div class="section">
+      <h2>About Me</h2>
+      <p>Multifaceted data professional with a strong foundation in backend development, data engineering, analytics, and business intelligence. With hands-on experience across real-time data streaming, ETL workflows, and distributed computing systems, I have built and optimized cloud-native pipelines, developed RESTful APIs, and engineered end-to-end solutions to support large-scale analytics. My work spans projects such as crime classification using geospatial modeling, live sports analytics pipelines using Spark and MongoDB, and scalable ETL solutions using AWS Glue and Redshift. I am passionate about transforming raw data into actionable insights and building systems that scale.</p>
+    </div>
+
+    <div class="section">
+      <h2>Core Skills</h2>
+      <div class="grid">
+        <div><strong>🖥 Programming</strong><br>Python, SQL, Java, R</div>
+        <div><strong>📊 Big Data & Tools</strong><br>Apache Spark, Kafka, DBT, Apache Drill, Hadoop, Git</div>
+        <div><strong>☁️ Cloud & DevOps</strong><br>AWS, Azure, GCP, Kubernetes, Jenkins, Airflow, Terraform, Snowflake</div>
+        <div><strong>🛢 Databases</strong><br>MSSQL, MySQL, PostgreSQL, MongoDB, Elasticsearch, Neo4j, Cassandra</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>IBM: ETL and Data Pipelines</li>
+        <li>Databricks: Lakehouse Fundamentals</li>
+        <li>Google: Foundations of BI</li>
+        <li>Snowflake: Hands-on Essentials</li>
+        <li>Azure Fundamentals (AZ-900)</li>
+        <li>Azure Data Fundamentals</li>
+        <li>Azure Data Scientist Associate</li>
+        <li>Azure Data Engineer Associate</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li>Masters in Applied Data Science, Syracuse University- School Of Information Studies, Dec 2024</li>
+        <li>Bachelors in Electronics and Communication Engineering, Anna University- Meenakshi Sundararajan Engineering College, Apr 2020</li>
+      </ul>
+    </div>
+
+    <div class="next-page-link">
+      <a href="portfolio.html">Explore Projects →</a>
+    </div>
+
+    <div class="footer">
+      Let’s build something scalable together.
     </div>
   </div>
-
 </body>
 </html>

@@ -7,94 +7,74 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
       background-color: #0a192f;
       color: #f8f8f8;
+      margin: 0;
+      padding: 0;
     }
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 30px;
-      background-color: #112240;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     }
-    header {
+    h1 {
+      color: #64ffda;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
+    h2 {
       color: #64ffda;
+      margin-top: 40px;
     }
-    header p {
-      font-style: italic;
-      color: #ccd6f6;
+    ul {
+      line-height: 1.8;
+      padding-left: 20px;
     }
     .section {
-      margin-top: 30px;
+      margin-bottom: 30px;
     }
-    .section h2 {
-      border-bottom: 2px solid #64ffda;
-      padding-bottom: 5px;
-      margin-bottom: 10px;
+    a {
       color: #64ffda;
+      text-decoration: none;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 15px;
-    }
-    .project {
-      background: #233554;
-      padding: 15px;
-      border-left: 4px solid #64ffda;
+    a:hover {
+      text-decoration: underline;
     }
     .footer {
+      text-align: center;
       margin-top: 50px;
-      text-align: center;
       font-style: italic;
-      color: #8892b0;
-    }
-    .next-page-link {
-      text-align: center;
-      margin-top: 30px;
-    }
-    .next-page-link a {
-      text-decoration: none;
-      color: #0a192f;
-      background-color: #64ffda;
-      padding: 10px 20px;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-    .next-page-link a:hover {
-      background-color: #52d1b2;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1>Madhumitha Saravanan</h1>
-      <p>Backend Engineer | Data Engineer | Data Analyst | Business Intelligence Developer</p>
-      <p>Email: madhumithasaravanan27@gmail.com | Phone: 315-561-5150</p>
-      <p>GitHub: github.com/madhusaravanan27 | LinkedIn: linkedin.com/in/mithasaravanan7</p>
-    </header>
+    <h1>Madhumitha Saravanan</h1>
 
     <div class="section">
       <h2>About Me</h2>
+      <p>Backend Engineer | Data Engineer | Data Analyst | Business Intelligence Developer</p>
+      <p>Email: madhumithasaravanan27@gmail.com | Phone: 315-561-5150</p>
+      <p>GitHub: <a href="https://github.com/madhusaravanan27" target="_blank">github.com/madhusaravanan27</a> | LinkedIn: <a href="https://www.linkedin.com/in/mithasaravanan7" target="_blank">linkedin.com/in/mithasaravanan7</a></p>
       <p>Multifaceted data professional with a strong foundation in backend development, data engineering, analytics, and business intelligence. With hands-on experience across real-time data streaming, ETL workflows, and distributed computing systems, I have built and optimized cloud-native pipelines, developed RESTful APIs, and engineered end-to-end solutions to support large-scale analytics. My work spans projects such as crime classification using geospatial modeling, live sports analytics pipelines using Spark and MongoDB, and scalable ETL solutions using AWS Glue and Redshift. I am passionate about transforming raw data into actionable insights and building systems that scale.</p>
     </div>
 
     <div class="section">
       <h2>Core Skills</h2>
-      <div class="grid">
-        <div><strong>🖥 Programming</strong><br>Python, SQL, Java, R</div>
-        <div><strong>📊 Big Data & Tools</strong><br>Apache Spark, Kafka, DBT, Apache Drill, Hadoop, Git</div>
-        <div><strong>☁️ Cloud & DevOps</strong><br>AWS, Azure, GCP, Kubernetes, Jenkins, Airflow, Terraform, Snowflake</div>
-        <div><strong>🛢 Databases</strong><br>MSSQL, MySQL, PostgreSQL, MongoDB, Elasticsearch, Neo4j, Cassandra</div>
-      </div>
+      <ul>
+        <li><strong>Programming:</strong> Python, SQL, Java, R</li>
+        <li><strong>Big Data & Tools:</strong> Apache Spark, Kafka, DBT, Apache Drill, Hadoop, Git</li>
+        <li><strong>Cloud & DevOps:</strong> AWS, Azure, GCP, Kubernetes, Jenkins, Airflow, Terraform, Snowflake</li>
+        <li><strong>Databases:</strong> MSSQL, MySQL, PostgreSQL, MongoDB, Elasticsearch, Neo4j, Cassandra</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Experience</h2>
+      <ul>
+        <li>Data Analyst Researcher at Syracuse University (Feb 2023 – Dec 2024)</li>
+        <li>Systems Engineer at Infosys Ltd (Apr 2021 – Dec 2022)</li>
+      </ul>
     </div>
 
     <div class="section">
@@ -119,12 +99,23 @@
       </ul>
     </div>
 
-    <div class="next-page-link">
-      <a href="port.html">Explore Projects →</a>
+    <div class="section">
+      <h2>Projects</h2>
+      <p>Check out my major academic and industry projects <a href="project.html" target="_blank">here →</a></p>
+    </div>
+
+    <div class="section">
+      <h2>Publications</h2>
+      <p><strong>Segmentation and Detection of White Matter Damage from Cranial Ultrasound using Hybrid Neural Networks</strong> – Published work in the field of biomedical imaging that combines CNN architectures to improve diagnostic accuracy. <a href="https://github.com/madhusaravanan27/Research-Publications" target="_blank">View Publication</a></p>
+    </div>
+
+    <div class="section">
+      <h2>Hobbies</h2>
+      <p>I love dancing—if there's a dance team, count me in! I also enjoy cooking and baking, often trying out Indian, Middle Eastern, and Italian cuisines.</p>
     </div>
 
     <div class="footer">
-      Let’s build something scalable together.
+      Thanks for exploring my work! Let’s connect and build something impactful together.
     </div>
   </div>
 </body>

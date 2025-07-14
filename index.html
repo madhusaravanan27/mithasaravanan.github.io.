@@ -54,15 +54,18 @@
     .section {
       margin-bottom: 30px;
     }
+    .section:last-of-type {
+      margin-bottom: 10px;
+    }
     .footer {
       text-align: center;
-      margin-top: 50px;
+      margin-top: 20px;
       font-style: italic;
       color: #aaa;
     }
     .contact-info {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 10px;
     }
     .contact-info a {
       color: #64ffda;
@@ -71,8 +74,16 @@
     .contact-info a:hover {
       text-decoration: underline;
     }
-    .inline-contact p {
-      margin: 5px 0;
+    .back-arrow {
+      margin-bottom: 20px;
+    }
+    .back-arrow a {
+      color: #64ffda;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .back-arrow a:hover {
+      text-decoration: underline;
     }
     @keyframes fadeIn {
       from { opacity: 0; }
@@ -86,6 +97,10 @@
 </head>
 <body>
   <div class="container">
+    <div class="back-arrow">
+      <a href="index.html">← Back to Main Page</a>
+    </div>
+
     <div class="header">
       <img src="myimage.jpg" alt="Madhumitha Saravanan">
       <div class="header-text">
